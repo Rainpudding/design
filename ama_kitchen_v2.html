@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="阿嬤ê灶跤 | 台南永康家常菜">
+  <meta property="og:description" content="阿嬤ê灶跤，台南永康在地家常台菜，民國62年開到現在。現買現煮、不用味精，週末建議先電話訂位。">
+  <meta property="og:image" content="https://ama-kitchen.tw/og-image.jpg">
+  <link rel="canonical" href="https://ama-kitchen.tw">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="阿嬤ê灶跤 — 台南市永康區的家常台菜小店。民國62年開到現在，當天現買、現切、現煮，不用味精。電話訂位 06-2561388。">
+  <title>阿嬤ê灶跤 | 台南永康家常菜餐廳</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "阿嬤ê灶跤",
+    "description": "台南永康的家常台菜小店，民國62年開到現在，當天現買、現切、現煮。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "台南市永康區中正路88號",
+      "addressLocality": "台南市",
+      "addressRegion": "台灣"
+    },
+    "telephone": "06-2561388",
+    "url": "https://ama-kitchen.tw",
+    "servesCuisine": "台灣家常料理",
+    "openingHours": "Mo-Fr 10:00-21:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "300"
+    },
+    "sameAs": ["https://facebook.com/amakitchen", "https://instagram.com/amakitchen"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 — 替換 G-XXXXXXXXXX 後啟用 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <style>
+    :root {
+      --ink:      #211e1a;
+      --ink-soft: #3c372f;
+      --paper-0:  #faf7ef;
+      --paper:    #f4efe4;
+      --paper-2:  #ece4d4;
+      --green:    #33453a;
+      --green-2:  #2a3a30;
+      --green-deep:#1d2922;
+      --red:      #7c2f28;
+      --red-2:    #642019;
+      --sub:      #5c5447;
+      --muted:    #8c8475;
+      --brass:    #9b7c45;
+      --line:     rgba(33,30,26,.16);
+      --line-soft:rgba(33,30,26,.08);
+      --gold:     #b3873f;
+      --r:        5px;
+      --serif:  'Noto Serif TC', serif;
+      --sans:   'Noto Sans TC', system-ui, -apple-system, sans-serif;
+      --accent: 'Fraunces', 'Noto Serif TC', serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.75;
+      padding-top: 68px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul, ol { list-style: none; }
+    img { display: block; width: 100%; object-fit: cover; }
+
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 92px 0; }
+
+    .ic { width: 18px; height: 18px; flex-shrink: 0; }
+
+    /* ── shared headings ── */
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: .74rem; font-weight: 700; letter-spacing: .14em;
+      color: var(--brass); margin-bottom: 20px;
+    }
+    .eyebrow::before { content: ''; width: 30px; height: 1px; background: var(--brass); }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+      font-weight: 700; line-height: 1.32; color: var(--ink);
+      letter-spacing: .01em; margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: .95rem; color: var(--sub);
+      max-width: 32em; line-height: 1.9;
+    }
+    .since {
+      font-family: var(--accent); font-style: italic;
+      font-weight: 400; color: var(--brass);
+      letter-spacing: .02em;
+    }
+
+    /* ── buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      font-family: var(--sans); font-size: .9rem; font-weight: 700;
+      padding: 13px 26px; border: none; cursor: pointer;
+      border-radius: var(--r);
+      transition: background .2s, color .2s, border-color .2s;
+    }
+    .btn-red    { background: var(--red); color: var(--paper-0); }
+    .btn-red:hover { background: var(--red-2); }
+    .btn-ghost  { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+    .btn-ghost:hover { border-color: var(--ink); }
+    .btn-green  { background: var(--green); color: var(--paper-0); }
+    .btn-green:hover { background: var(--green-2); }
+
+    /* ── image placeholder frame ── */
+    .img-frame {
+      position: relative; background: var(--paper-2);
+      border: 1.5px dashed rgba(33,30,26,.26);
+      border-radius: var(--r);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 12px; text-align: center; color: var(--muted); padding: 28px;
+    }
+    .img-frame .cam { width: 30px; height: 30px; opacity: .5; }
+    .img-frame .lbl { font-size: .8rem; line-height: 1.65; letter-spacing: .02em; max-width: 230px; }
+
+    /* ══════ NAV ══════ */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(244,239,228,.82);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color .35s, background .35s;
+    }
+    #nav.scrolled {
+      background: rgba(244,239,228,.95);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--ink); letter-spacing: .04em; }
+    .nav-logo em { font-style: normal; color: var(--red); }
+    .nav-links { display: flex; gap: 30px; }
+    .nav-links a { font-size: .86rem; color: var(--sub); font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--red); }
+    .nav-right { display: flex; align-items: center; gap: 18px; }
+    .nav-ig { display: inline-flex; align-items: center; gap: 6px; font-size: .8rem; color: var(--muted); }
+    .nav-cta { font-size: .82rem; padding: 9px 18px; }
+    .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .nav-burger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: .3s; }
+
+    /* ══════ HERO ══════ */
+    #hero { background: var(--paper); padding: 0; }
+    .hero-wrap {
+      display: grid; grid-template-columns: 1.08fr .92fr;
+      gap: 72px; align-items: center;
+      min-height: 86vh; padding: 64px 0 56px;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: .76rem; font-weight: 700; letter-spacing: .14em;
+      color: var(--brass); margin-bottom: 26px;
+    }
+    .hero-eyebrow::before { content: ''; width: 30px; height: 1px; background: var(--brass); }
+    .hero-h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 5vw, 3.7rem);
+      font-weight: 700; line-height: 1.28; color: var(--ink);
+      letter-spacing: .02em; margin-bottom: 28px;
+    }
+    .hero-h1 .accent { color: var(--red); }
+    .hero-lead {
+      font-size: 1.06rem; color: var(--ink-soft);
+      line-height: 1.95; max-width: 27em; margin-bottom: 28px;
+    }
+    .hero-note {
+      display: flex; align-items: center; gap: 9px;
+      font-size: .85rem; color: var(--sub); margin-bottom: 36px;
+    }
+    .hero-note .ic { width: 16px; height: 16px; color: var(--brass); }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .hero-actions .btn-red { padding: 15px 28px; }
+    .hero-tel-num { font-family: var(--accent); font-weight: 500; letter-spacing: .03em; }
+    .hero-textlink {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: .92rem; font-weight: 700; color: var(--ink);
+      border-bottom: 1.5px solid var(--ink); padding-bottom: 2px;
+    }
+    .hero-textlink:hover { color: var(--red); border-color: var(--red); }
+    .hero-frame { aspect-ratio: 4/5; }
+    .hero-stamp {
+      position: absolute; top: 18px; right: 18px;
+      font-family: var(--accent); font-style: italic;
+      font-size: .82rem; color: var(--brass);
+      border: 1px solid var(--brass); border-radius: 99px;
+      padding: 4px 14px; background: var(--paper-0);
+    }
+
+    /* ══════ NOTICE ══════ */
+    .notice-bar {
+      background: var(--green); color: var(--paper-0);
+      font-size: .84rem; text-align: center; padding: 12px 20px;
+      letter-spacing: .02em;
+    }
+    .notice-bar strong { color: #e9c98a; font-weight: 700; }
+
+    /* ══════ STORY ══════ */
+    #signature { background: var(--paper-0); }
+    .sig-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 64px; align-items: start; }
+    .sig-media { position: relative; }
+    .sig-frame { aspect-ratio: 3/4; }
+    .sig-badge {
+      position: absolute; bottom: -22px; right: -18px;
+      background: var(--green); color: var(--paper-0);
+      padding: 18px 22px; border-radius: var(--r);
+    }
+    .sig-badge-num { font-family: var(--accent); font-size: 2.1rem; font-weight: 600; line-height: 1; }
+    .sig-badge-label { font-size: .72rem; color: rgba(244,239,228,.78); margin-top: 5px; letter-spacing: .04em; }
+    .sig-body { padding-top: 8px; }
+    .sig-quote {
+      font-family: var(--serif);
+      font-size: 1.18rem; color: var(--ink); font-weight: 500;
+      line-height: 1.95; margin: 22px 0 26px;
+      padding-left: 22px; border-left: 2px solid var(--red);
+    }
+    .sig-quote cite { display: block; font-style: normal; font-size: .85rem; color: var(--muted); margin-top: 14px; font-family: var(--sans); }
+    .sig-text p { font-size: .94rem; color: var(--sub); line-height: 1.95; margin-bottom: 16px; }
+    .vals { margin-top: 32px; display: grid; gap: 4px; }
+    .val { display: grid; grid-template-columns: 46px 1fr; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line-soft); }
+    .val:last-child { border-bottom: 1px solid var(--line-soft); }
+    .val-n { font-family: var(--accent); font-size: 1.1rem; font-weight: 500; color: var(--brass); }
+    .val b { font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--ink); display: block; margin-bottom: 4px; }
+    .val p { font-size: .85rem; color: var(--sub); line-height: 1.75; }
+
+    /* ══════ MENU ══════ */
+    #menu { background: var(--paper); }
+    .menu-head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 24px; margin-bottom: 14px; }
+    .menu-note { font-size: .83rem; color: var(--muted); line-height: 1.7; max-width: 18em; text-align: right; }
+    .menu-tabs { display: flex; gap: 28px; flex-wrap: wrap; margin: 30px 0 44px; border-bottom: 1px solid var(--line); }
+    .menu-cat-btn {
+      background: none; border: none; cursor: pointer;
+      font-family: var(--sans); font-size: .94rem; font-weight: 500;
+      color: var(--muted); padding: 0 0 14px; position: relative;
+      transition: color .2s;
+    }
+    .menu-cat-btn:hover { color: var(--ink); }
+    .menu-cat-btn.active { color: var(--ink); font-weight: 700; }
+    .menu-cat-btn.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--red); }
+    .menu-columns { column-count: 2; column-gap: 64px; }
+    .menu-section { break-inside: avoid; margin-bottom: 44px; }
+    .menu-cat-head {
+      font-family: var(--serif); font-size: 1.3rem; font-weight: 700;
+      color: var(--ink); display: flex; align-items: baseline; gap: 14px; margin-bottom: 6px;
+    }
+    .menu-cat-head .en {
+      font-family: var(--accent); font-style: italic; font-size: .82rem;
+      font-weight: 400; color: var(--brass); letter-spacing: .04em;
+    }
+    .menu-cat-rule { height: 1px; background: var(--line); margin-bottom: 8px; }
+    .dish { display: grid; grid-template-columns: 1fr auto; gap: 3px 16px; padding: 15px 0; border-bottom: 1px solid var(--line-soft); align-items: baseline; }
+    .dish-name { font-family: var(--serif); font-size: 1.04rem; font-weight: 600; color: var(--ink); }
+    .dish-tag {
+      font-family: var(--sans); font-size: .62rem; font-weight: 700;
+      letter-spacing: .05em; padding: 1px 7px; margin-left: 9px;
+      border-radius: 2px; vertical-align: middle;
+    }
+    .tag-house { color: var(--red); border: 1px solid var(--red); }
+    .tag-season { color: var(--green); border: 1px solid var(--green); }
+    .dish-price { font-family: var(--accent); font-size: 1.02rem; font-weight: 500; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+    .dish-desc { grid-column: 1 / 2; font-size: .82rem; color: var(--sub); line-height: 1.7; }
+    .menu-foot { margin-top: 18px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .menu-foot p { font-size: .84rem; color: var(--muted); }
+
+    /* ══════ HIGHLIGHTS ══════ */
+    #highlights { background: var(--paper-0); }
+    .hl-head { max-width: 30em; margin-bottom: 50px; }
+    .hl-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 28px; align-items: start; }
+    .hl-card .hl-frame { margin-bottom: 18px; }
+    .hl-card:first-child .hl-frame { aspect-ratio: 4/5; }
+    .hl-card:not(:first-child) .hl-frame { aspect-ratio: 4/3; }
+    .hl-rank { font-family: var(--accent); font-style: italic; font-size: .8rem; color: var(--brass); margin-bottom: 8px; letter-spacing: .03em; }
+    .hl-name { font-family: var(--serif); font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+    .hl-card:first-child .hl-name { font-size: 1.5rem; }
+    .hl-card:not(:first-child) .hl-name { font-size: 1.15rem; }
+    .hl-desc { font-size: .86rem; color: var(--sub); line-height: 1.85; }
+    .hl-card:first-child .hl-desc { font-size: .92rem; }
+
+    /* ══════ REVIEWS ══════ */
+    #reviews { background: var(--paper); }
+    .rev-top { display: grid; grid-template-columns: auto 1fr; gap: 56px; align-items: center; margin-bottom: 52px; padding-bottom: 44px; border-bottom: 1px solid var(--line); }
+    .score-num { font-family: var(--accent); font-size: 4.4rem; font-weight: 600; color: var(--ink); line-height: 1; }
+    .score-stars { color: var(--gold); font-size: 1.05rem; letter-spacing: 3px; margin: 10px 0 6px; }
+    .score-count { font-size: .76rem; color: var(--muted); }
+    .score-bars { display: grid; gap: 9px; max-width: 360px; }
+    .bar-row { display: flex; align-items: center; gap: 12px; font-size: .76rem; color: var(--sub); }
+    .bar-row > span:first-child { width: 22px; }
+    .bar-track { flex: 1; height: 5px; background: var(--paper-2); border-radius: 99px; overflow: hidden; }
+    .bar-fill { height: 100%; background: var(--gold); }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; align-items: start; }
+    .review-card:nth-child(2) { margin-top: 30px; }
+    .review-quote-mark { font-family: var(--accent); font-size: 2.6rem; color: var(--brass); line-height: .6; opacity: .55; }
+    .review-stars { color: var(--gold); font-size: .85rem; letter-spacing: 1px; margin: 12px 0 12px; }
+    .review-text { font-family: var(--serif); font-size: .96rem; color: var(--ink-soft); line-height: 1.95; margin-bottom: 20px; }
+    .review-dish { font-size: .72rem; color: var(--brass); letter-spacing: .04em; margin-bottom: 16px; }
+    .review-author { display: flex; align-items: baseline; gap: 10px; }
+    .review-name { font-size: .85rem; font-weight: 700; color: var(--ink); }
+    .review-date { font-size: .72rem; color: var(--muted); }
+
+    /* ══════ INFO ══════ */
+    #info { background: var(--paper-0); }
+    .info-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
+    .info-block + .info-block { margin-top: 8px; }
+    .info-h { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+    .hours-list { display: grid; }
+    .hours-row { display: flex; justify-content: space-between; font-size: .9rem; padding: 11px 0; border-bottom: 1px solid var(--line-soft); }
+    .hours-day { font-weight: 500; color: var(--ink-soft); }
+    .hours-time { color: var(--sub); font-family: var(--accent); font-weight: 400; font-variant-numeric: tabular-nums; }
+    .hours-closed { color: var(--muted); font-size: .84rem; }
+    .hours-today .hours-day { color: var(--red); font-weight: 700; }
+    .hours-today .hours-time { color: var(--red); }
+    .hours-foot { font-size: .76rem; color: var(--muted); margin-top: 14px; line-height: 1.7; }
+    .info-row { display: grid; grid-template-columns: 76px 1fr; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line-soft); }
+    .info-k { font-family: var(--accent); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--brass); padding-top: 4px; }
+    .info-v { font-size: .92rem; color: var(--ink-soft); line-height: 1.75; }
+    .info-v a { color: var(--red); font-weight: 700; font-family: var(--accent); }
+    .map-frame { aspect-ratio: 16/9; margin-top: 22px; }
+
+    /* ══════ CTA ══════ */
+    #cta { background: var(--green); }
+    .cta-inner { padding: 76px 0; display: grid; grid-template-columns: 1fr auto; gap: 36px; align-items: center; }
+    .cta-eyebrow { color: #d8bd86; }
+    .cta-eyebrow::before { background: #d8bd86; }
+    .cta-text h2 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 700; color: var(--paper-0); margin-bottom: 12px; line-height: 1.4; }
+    .cta-text p { color: rgba(244,239,228,.72); font-size: .96rem; line-height: 1.8; max-width: 30em; }
+    .cta-actions { display: flex; flex-direction: column; gap: 12px; }
+    .cta-actions .btn { justify-content: center; }
+    .cta-btn-paper { background: var(--paper-0); color: var(--green-deep); }
+    .cta-btn-paper:hover { background: #fff; }
+    .cta-btn-line { background: transparent; color: var(--paper-0); border: 1px solid rgba(244,239,228,.45); }
+    .cta-btn-line:hover { border-color: var(--paper-0); }
+
+    /* ══════ FAQ ══════ */
+    #faq { background: var(--paper); }
+    .faq-head { margin-bottom: 44px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 40px; }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; cursor: pointer; font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--ink); }
+    .faq-q::after { content: '＋'; font-family: var(--sans); font-size: 1.1rem; color: var(--brass); flex-shrink: 0; transition: transform .25s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; font-size: .88rem; color: var(--sub); line-height: 1.85; transition: max-height .3s ease, padding .3s; }
+    .faq-item.open .faq-a { max-height: 240px; padding: 0 0 22px; }
+
+    /* ══════ FOOTER ══════ */
+    footer { background: var(--green-deep); color: rgba(244,239,228,.62); padding: 72px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 52px; margin-bottom: 52px; }
+    .footer-logo { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; color: var(--paper-0); margin-bottom: 14px; letter-spacing: .04em; }
+    .footer-logo em { font-style: normal; color: #d8bd86; }
+    .footer-desc { font-size: .87rem; line-height: 1.9; margin-bottom: 22px; max-width: 26em; }
+    .footer-since { font-family: var(--accent); font-style: italic; font-size: .82rem; color: rgba(244,239,228,.4); }
+    .footer-contacts { display: grid; gap: 9px; margin-top: 6px; }
+    .footer-contact { display: flex; gap: 10px; font-size: .84rem; align-items: flex-start; }
+    .footer-contact .ic { width: 15px; height: 15px; color: #d8bd86; margin-top: 3px; }
+    .footer-col-title { font-size: .73rem; font-weight: 700; letter-spacing: .12em; color: var(--paper-0); margin-bottom: 20px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { font-size: .85rem; color: rgba(244,239,228,.55); transition: color .2s; }
+    .footer-links a:hover { color: var(--paper-0); }
+    .footer-bottom { border-top: 1px solid rgba(244,239,228,.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: .74rem; color: rgba(244,239,228,.32); flex-wrap: wrap; gap: 8px; }
+    .footer-bottom a { color: rgba(244,239,228,.5); }
+    .footer-bottom a:hover { color: var(--paper-0); }
+
+    /* ── animation ── */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ══════ MOBILE STICKY ══════ */
+    .mobile-cta-bar {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 300;
+      background: rgba(244,239,228,.96); backdrop-filter: blur(12px);
+      border-top: 1px solid var(--line); padding: 11px 16px 15px; gap: 10px;
+    }
+    .mobile-cta-bar a {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      gap: 7px; font-size: .86rem; font-weight: 700; padding: 13px; border-radius: var(--r);
+    }
+    .mcta-tel { background: var(--red); color: var(--paper-0); }
+    .mcta-map { background: transparent; color: var(--green); border: 1px solid var(--green); }
+
+    /* ══════ RESPONSIVE ══════ */
+    @media (max-width: 940px) {
+      .nav-links, .nav-ig { display: none; }
+      .nav-cta { display: none; }
+      .nav-burger { display: flex; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: fixed; top: 68px; left: 0; right: 0;
+        background: rgba(244,239,228,.98); backdrop-filter: blur(14px);
+        padding: 26px 32px; gap: 22px;
+        border-bottom: 1px solid var(--line); z-index: 199;
+      }
+      .hero-wrap { grid-template-columns: 1fr; gap: 40px; min-height: auto; padding: 48px 0; }
+      .hero-frame { aspect-ratio: 16/10; }
+      .sig-layout { grid-template-columns: 1fr; gap: 56px; }
+      .sig-frame { aspect-ratio: 16/10; }
+      .sig-badge { bottom: -18px; right: 16px; }
+      .menu-columns { column-count: 1; }
+      .menu-head { grid-template-columns: 1fr; }
+      .menu-note { text-align: left; max-width: none; }
+      .hl-grid { grid-template-columns: 1fr; gap: 36px; }
+      .hl-card:first-child .hl-frame, .hl-card:not(:first-child) .hl-frame { aspect-ratio: 16/10; }
+      .rev-top { grid-template-columns: 1fr; gap: 28px; }
+      .review-grid { grid-template-columns: 1fr; }
+      .review-card:nth-child(2) { margin-top: 0; }
+      .info-layout { grid-template-columns: 1fr; gap: 44px; }
+      .cta-inner { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+      section { padding: 64px 0; }
+      .mobile-cta-bar { display: flex; }
+      body { padding-bottom: 74px; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 22px; }
+      .faq-grid { grid-template-columns: 1fr; }
+      .hero-h1 { font-size: 2.15rem; }
+    }
+
+    @media print {
+      #nav, .mobile-cta-bar, .hero-actions, #cta { display: none !important; }
+      body { padding-top: 0; }
+      .img-frame { display: none; }
+      section { padding: 28px 0; }
+      .fade-in { opacity: 1; transform: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      html { scroll-behavior: auto; }
+      .fade-in { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <div class="nav-logo">阿嬤<em>ê</em>灶跤</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#signature">關於我們</a></li>
+      <li><a href="#menu">今日菜色</a></li>
+      <li><a href="ama_kitchen_menu.html">完整菜單</a></li>
+      <li><a href="#reviews">客人的話</a></li>
+      <li><a href="#info">來坐</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-ig">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @amakitchen_tainan
+      </span>
+      <a href="tel:06-2561388" class="btn btn-red nav-cta">電話訂位</a>
+    </div>
+    <div class="nav-burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-wrap">
+      <div class="hero-text fade-in">
+        <div class="hero-eyebrow">台南・永康　家常台菜</div>
+        <h1 class="hero-h1">厝邊頭尾<br>呷五十年的<span class="accent">那一味</span></h1>
+        <p class="hero-lead">沒有大菜，沒有花俏的擺盤。就是阿嬤每天早上去市場挑的菜，當天現切、現煮，賣完就收。</p>
+        <div class="hero-note">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          午餐 11:30–14:00　晚餐 17:00–20:30　週一公休
+        </div>
+        <div class="hero-actions">
+          <a href="tel:06-2561388" class="btn btn-red">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            電話訂位 <span class="hero-tel-num">06-2561388</span>
+          </a>
+          <a href="#menu" class="hero-textlink">看看今天有什麼　→</a>
+        </div>
+      </div>
+      <div class="hero-media fade-in">
+        <div class="img-frame hero-frame">
+          <span class="hero-stamp">Since 1973</span>
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：店內用餐空間，或一桌剛上菜的招牌台菜俯拍]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NOTICE ══ -->
+<div class="notice-bar">
+  週末用餐尖峰，建議先打通電話，我們會幫你<strong>留好位子</strong>。
+</div>
+
+<!-- ══ STORY ══ -->
+<section id="signature">
+  <div class="container">
+    <div class="sig-layout">
+      <div class="sig-media fade-in">
+        <div class="img-frame sig-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：阿嬤或頭家娘在灶跤的工作照]</span>
+        </div>
+        <div class="sig-badge">
+          <div class="sig-badge-num">50<span style="font-size:1rem;">年</span></div>
+          <div class="sig-badge-label">同一個位置，同一個味</div>
+        </div>
+      </div>
+      <div class="sig-body fade-in">
+        <div class="eyebrow">關於阿嬤ê灶跤</div>
+        <h2 class="section-title">民國62年開到現在，<br>沒換過位置，也沒換過做法</h2>
+        <blockquote class="sig-quote">
+          「我沒讀過什麼料理學校，就是照阿母教的，菜市場挑當天上的，火候顧好，這樣而已。」
+          <cite>— 陳秀英　第三代頭家娘</cite>
+        </blockquote>
+        <div class="sig-text">
+          <p>這間店是阿嬤在民國62年開的。那時候永康還沒這麼熱鬧，她在中正路擺了幾張桌子，煮的就是自己家裡吃的菜——爌肉、菜脯蛋、苦瓜排骨湯，沒什麼稀奇，但街坊鄰居一吃就是幾十年。</p>
+          <p>傳到第三代，我們還是每天早上六點去市場，當天的菜當天煮。湯頭用大骨跟蔬菜慢慢熬，不加味精。我們不敢說多厲害，只是想把這個味道留著，煮給更多人吃。</p>
+        </div>
+        <ol class="vals">
+          <li class="val"><span class="val-n">01</span><div><b>當天現買</b><p>阿嬤習慣天還沒亮就去市場，當天的菜當天煮，賣完就沒了，不留隔夜。</p></div></li>
+          <li class="val"><span class="val-n">02</span><div><b>不下味精</b><p>湯頭用豬大骨和蔬菜熬足四個鐘頭，鮮味是熬出來的，不是加出來的。</p></div></li>
+          <li class="val"><span class="val-n">03</span><div><b>火候自己顧</b><p>每道菜現點現炒，沒有預製、沒有微波，慢一點，但吃得出差別。</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MENU ══ -->
+<section id="menu">
+  <div class="container">
+    <div class="menu-head fade-in">
+      <div>
+        <div class="eyebrow">今日菜色</div>
+        <h2 class="section-title">菜單</h2>
+      </div>
+      <p class="menu-note">菜會跟著季節跟當天市場換，部分是限量的，賣完就沒囉。</p>
+    </div>
+
+    <div class="menu-tabs fade-in">
+      <button class="menu-cat-btn active">全部</button>
+      <button class="menu-cat-btn">招牌菜</button>
+      <button class="menu-cat-btn">熱炒</button>
+      <button class="menu-cat-btn">湯品</button>
+      <button class="menu-cat-btn">甜點</button>
+    </div>
+
+    <div class="menu-columns">
+      <!-- 招牌菜 -->
+      <div class="menu-section fade-in" data-cat="招牌菜">
+        <div class="menu-cat-head">招牌菜 <span class="en">house favorites</span></div>
+        <div class="menu-cat-rule"></div>
+        <div class="dish">
+          <div class="dish-name">招牌三杯雞<span class="dish-tag tag-house">招牌</span></div>
+          <div class="dish-price">$280</div>
+          <div class="dish-desc">九層塔現摘，溫體雞，自家釀的醬油，起鍋前才下塔香。</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">古早味爌肉飯</div>
+          <div class="dish-price">$70</div>
+          <div class="dish-desc">溫體豬五花滷足六小時，肥而不膩，淋上滷汁配白飯。</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">菜脯煎蛋</div>
+          <div class="dish-price">$110</div>
+          <div class="dish-desc">老菜脯切丁，蛋香帶點微焦邊，最家常也最耐吃。</div>
+        </div>
+      </div>
+
+      <!-- 熱炒 -->
+      <div class="menu-section fade-in" data-cat="熱炒">
+        <div class="menu-cat-head">熱炒 <span class="en">stir-fry</span></div>
+        <div class="menu-cat-rule"></div>
+        <div class="dish">
+          <div class="dish-name">蒜炒水蓮</div>
+          <div class="dish-price">$150</div>
+          <div class="dish-desc">大火快炒鎖住水分，清脆爽口，解膩的好選擇。</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">沙茶炒牛肉</div>
+          <div class="dish-price">$220</div>
+          <div class="dish-desc">嫩肩里肌，沙茶夠味，鑊氣足，是會多添一碗飯的那種。</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">鹹蛋苦瓜<span class="dish-tag tag-season">季節</span></div>
+          <div class="dish-price">$160</div>
+          <div class="dish-desc">山苦瓜裹鹹蛋黃，微苦回甘，看季節有沒有好苦瓜。</div>
+        </div>
+      </div>
+
+      <!-- 湯品 -->
+      <div class="menu-section fade-in" data-cat="湯品">
+        <div class="menu-cat-head">湯品 <span class="en">soup</span></div>
+        <div class="menu-cat-rule"></div>
+        <div class="dish">
+          <div class="dish-name">苦瓜排骨湯</div>
+          <div class="dish-price">$180</div>
+          <div class="dish-desc">白玉苦瓜燉到透，湯頭清甜不油，喝一口整個人鬆下來。</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">蛤蜊絲瓜</div>
+          <div class="dish-price">$160</div>
+          <div class="dish-desc">澎湖絲瓜配現吐沙的蛤蜊，鮮甜，不用多調味。</div>
+        </div>
+      </div>
+
+      <!-- 甜點 -->
+      <div class="menu-section fade-in" data-cat="甜點">
+        <div class="menu-cat-head">甜點 <span class="en">sweets</span></div>
+        <div class="menu-cat-rule"></div>
+        <div class="dish">
+          <div class="dish-name">古早味豆花</div>
+          <div class="dish-price">$50</div>
+          <div class="dish-desc">純黃豆手工做，糖水自己熬，吃完飯來一碗剛剛好。</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">紅豆湯圓</div>
+          <div class="dish-price">$60</div>
+          <div class="dish-desc">小湯圓Q彈，紅豆熬到綿，冬天特別多人點。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-foot fade-in">
+      <p>這裡只放幾道常點的，完整菜單在店裡，或直接打電話問我們。</p>
+      <a href="ama_kitchen_menu.html" class="hero-textlink">完整菜單　→</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HIGHLIGHTS ══ -->
+<section id="highlights">
+  <div class="container">
+    <div class="hl-head fade-in">
+      <div class="eyebrow">不點會後悔</div>
+      <h2 class="section-title">第一次來，先點這幾道</h2>
+    </div>
+    <div class="hl-grid">
+      <div class="hl-card fade-in">
+        <div class="img-frame hl-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：招牌三杯雞砂鍋實拍，冒煙最好]</span>
+        </div>
+        <div class="hl-rank">點最多的一道</div>
+        <h3 class="hl-name">招牌三杯雞</h3>
+        <p class="hl-desc">九層塔現摘、在地溫體雞、自家醬油，慢火燜到收汁。有老客人說，這個味他在別的地方找不到——我們聽了很開心，也有點壓力。</p>
+      </div>
+      <div class="hl-card fade-in">
+        <div class="img-frame hl-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：爌肉飯實拍]</span>
+        </div>
+        <div class="hl-rank">阿嬤的拿手</div>
+        <h3 class="hl-name">古早味爌肉飯</h3>
+        <p class="hl-desc">五花滷六小時，肥肉入口即化，滷汁拌飯能扒兩碗。</p>
+      </div>
+      <div class="hl-card fade-in">
+        <div class="img-frame hl-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：苦瓜排骨湯實拍]</span>
+        </div>
+        <div class="hl-rank">解膩首選</div>
+        <h3 class="hl-name">苦瓜排骨湯</h3>
+        <p class="hl-desc">苦瓜燉到透，湯清甜不油，配熱炒最對味。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ══ -->
+<section id="reviews">
+  <div class="container">
+    <div class="eyebrow fade-in">客人的話</div>
+    <div class="rev-top fade-in">
+      <div class="score-box">
+        <div class="score-num">4.8</div>
+        <div class="score-stars">★★★★★</div>
+        <div class="score-count">Google 評論　300 則以上</div>
+      </div>
+      <div class="score-bars">
+        <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span>88%</span></div>
+        <div class="bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div><span>9%</span></div>
+        <div class="bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:3%"></div></div><span>3%</span></div>
+        <div class="bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+        <div class="bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+      </div>
+    </div>
+    <div class="review-grid">
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">帶爸媽來吃，爌肉飯跟三杯雞都被掃光。阿嬤還親自出來問我們夠不夠鹹，很久沒遇到這種人情味了。</p>
+        <div class="review-dish">點了：三杯雞、爌肉飯</div>
+        <div class="review-author"><span class="review-name">王 O 美</span><span class="review-date">2025 年 3 月</span></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">道道都是真材實料，最愛苦瓜排骨湯，清甜不油膩。價錢也老實，沒有因為在地有名就亂漲。</p>
+        <div class="review-dish">點了：苦瓜排骨湯</div>
+        <div class="review-author"><span class="review-name">陳 O 翰</span><span class="review-date">2025 年 2 月</span></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">店不大，座位也普通，但東西好吃。就是那種會一直想再來的家常味，已經帶好幾個朋友來了。</p>
+        <div class="review-dish">常客</div>
+        <div class="review-author"><span class="review-name">林 O 語</span><span class="review-date">2025 年 1 月</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INFO ══ -->
+<section id="info">
+  <div class="container">
+    <div class="eyebrow fade-in">來坐</div>
+    <h2 class="section-title fade-in" style="margin-bottom:48px;">營業時間與位置</h2>
+    <div class="info-layout">
+      <div class="info-block fade-in">
+        <div class="info-h">營業時間</div>
+        <div class="hours-list" id="hoursList">
+          <div class="hours-row" data-day="週一"><span class="hours-day">週一</span><span class="hours-closed">公休</span></div>
+          <div class="hours-row" data-day="週二"><span class="hours-day">週二</span><span class="hours-time">11:30 – 21:00</span></div>
+          <div class="hours-row" data-day="週三"><span class="hours-day">週三</span><span class="hours-time">11:30 – 21:00</span></div>
+          <div class="hours-row" data-day="週四"><span class="hours-day">週四</span><span class="hours-time">11:30 – 21:00</span></div>
+          <div class="hours-row" data-day="週五"><span class="hours-day">週五</span><span class="hours-time">11:30 – 21:30</span></div>
+          <div class="hours-row" data-day="週六"><span class="hours-day">週六</span><span class="hours-time">11:00 – 21:30</span></div>
+          <div class="hours-row" data-day="週日"><span class="hours-day">週日</span><span class="hours-time">11:00 – 21:00</span></div>
+        </div>
+        <p class="hours-foot">最後點餐為打烊前 30 分鐘。國定假日營業時間以 IG 公告為準。</p>
+      </div>
+      <div class="info-block fade-in">
+        <div class="info-h">怎麼找到我們</div>
+        <div class="info-row"><div class="info-k">地址</div><div class="info-v">台南市永康區中正路88號（永康公園旁）</div></div>
+        <div class="info-row"><div class="info-k">電話</div><div class="info-v"><a href="tel:06-2561388">06-2561388</a></div></div>
+        <div class="info-row"><div class="info-k">交通</div><div class="info-v">台鐵永康站步行約 8 分鐘；開車走永康交流道下約 3 分鐘。</div></div>
+        <div class="info-row"><div class="info-k">停車</div><div class="info-v">店門口有機車格 5 個；汽車建議停中正路公有停車場，步行 2 分鐘。</div></div>
+        <div class="img-frame map-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="lbl">[此處嵌入 Google 地圖 iframe]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <div class="eyebrow cta-eyebrow">找一工來坐</div>
+        <h2>不用特別準備，肚子餓了就來</h2>
+        <p>週末的位子比較搶手，先打通電話，我們留位子給你，免得你來了還要等。</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:06-2561388" class="btn cta-btn-paper">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          電話訂位 06-2561388
+        </a>
+        <a href="https://maps.google.com/?q=台南市永康區中正路88號" target="_blank" rel="noopener" class="btn cta-btn-line">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Google 地圖導航
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-head fade-in">
+      <div class="eyebrow">來之前想問的</div>
+      <h2 class="section-title">常見問題</h2>
+    </div>
+    <div class="faq-grid fade-in">
+      <div class="faq-item">
+        <div class="faq-q">一定要訂位嗎？</div>
+        <div class="faq-a">平日通常直接來就有位子。週末跟假日人比較多，建議提前一天打電話，我們幫你留位。電話或 LINE 都可以訂。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">有素食嗎？</div>
+        <div class="faq-a">有幾道固定的素食（豆腐、炒時蔬這類），訂位時先講一聲，我們會幫你留、幫你配。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">附近好停車嗎？</div>
+        <div class="faq-a">機車可以停門口，有 5 個格子。開車的話建議停中正路公有停車場，走過來大概 2 分鐘。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">可以包場或辦聚餐嗎？</div>
+        <div class="faq-a">8 人以上可以談包場，提前 3 天打電話給我們，可以幫你配家庭桌菜、報個價。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">阿嬤<em>ê</em>灶跤</div>
+        <p class="footer-desc">沒什麼大道理，就是把家裡會煮的菜，好好煮給更多人吃。</p>
+        <div class="footer-since">Since 1973・台南永康</div>
+        <div class="footer-contacts">
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>台南市永康區中正路88號</span></div>
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>06-2561388</span></div>
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>@amakitchen_tainan</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">逛逛</div>
+        <div class="footer-links">
+          <a href="#signature">關於我們</a>
+          <a href="#menu">今日菜色</a>
+          <a href="ama_kitchen_menu.html">完整菜單</a>
+          <a href="#reviews">客人的話</a>
+          <a href="#info">營業時間</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">找我們</div>
+        <div class="footer-links">
+          <a href="https://instagram.com/amakitchen" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/amakitchen" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://maps.google.com/?q=台南市永康區中正路88號" target="_blank" rel="noopener">Google 地圖</a>
+          <a href="tel:06-2561388">電話訂位</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 阿嬤ê灶跤．版權所有</span>
+      <span>網站設計　<a href="#">蕭丞叡 網頁設計</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ MOBILE STICKY CTA ══ -->
+<div class="mobile-cta-bar">
+  <a href="tel:06-2561388" class="mcta-tel">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    電話訂位
+  </a>
+  <a href="https://maps.google.com/?q=台南市永康區中正路88號" target="_blank" rel="noopener" class="mcta-map">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    導航
+  </a>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 70);
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+
+  // Highlight today's hours
+  const days = ['週日','週一','週二','週三','週四','週五','週六'];
+  const today = days[new Date().getDay()];
+  document.querySelectorAll('.hours-row').forEach(row => {
+    if (row.dataset.day === today) row.classList.add('hours-today');
+  });
+
+  // 菜單分類篩選
+  document.querySelectorAll('.menu-cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.menu-cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.textContent.trim();
+      document.querySelectorAll('.menu-section[data-cat]').forEach(sec => {
+        sec.style.display = (cat === '全部' || sec.dataset.cat === cat) ? '' : 'none';
+      });
+      if (typeof gtag === 'function') {
+        gtag('event', 'menu_filter', { event_category: 'engagement', event_label: cat });
+      }
+    });
+  });
+
+  // GA4 事件：電話點擊
+  document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+    el.addEventListener('click', () => {
+      if (typeof gtag === 'function') gtag('event', 'phone_click', { event_category: 'contact' });
+    });
+  });
+
+  // GA4 事件：菜單區塊曝光
+  if (typeof IntersectionObserver !== 'undefined') {
+    const menuObserver = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && typeof gtag === 'function') {
+        gtag('event', 'view_menu', { event_category: 'engagement' });
+        menuObserver.disconnect();
+      }
+    }, { threshold: 0.4 });
+    const menuSection = document.querySelector('#menu');
+    if (menuSection) menuObserver.observe(menuSection);
+  }
+
+  // FAQ 手風琴
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+
+  // GA4 事件：地圖連結點擊
+  document.querySelectorAll('a[href*="google.com/maps"], a[href*="goo.gl/maps"]').forEach(el => {
+    el.addEventListener('click', () => {
+      if (typeof gtag === 'function') gtag('event', 'map_click', { event_category: 'contact' });
+    });
+  });
+
+  // GA4 事件：訂位 CTA 點擊
+  document.querySelectorAll('a[href^="tel:"], .reserve-btn, a[href*="reserve"], a[href*="booking"]').forEach(el => {
+    el.addEventListener('click', () => {
+      if (typeof gtag === 'function') gtag('event', 'reserve_click', { event_category: 'conversion' });
+    });
+  });
+</script>
+</body>
+</html>

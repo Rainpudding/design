@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="蕭丞叡 網頁設計 | 專為台灣在地業者打造會帶客的網站">
+  <meta property="og:description" content="餐廳、農場、民宿、診所…專做台灣在地業者的客製網站。手機完美瀏覽、Google 搜得到、設計有質感而非模板感。">
+  <meta property="og:image" content="https://example.com/og-portfolio.jpg">
+  <link rel="canonical" href="https://example.com">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="蕭丞叡 網頁設計 — 專為台灣在地業者（餐廳、農場、民宿、診所）打造客製網站。手機完美瀏覽、Google 搜得到、設計有質感不套模板。歡迎洽談。">
+  <title>蕭丞叡 網頁設計 | 台灣在地業者網站設計</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink:#211f1c; --ink-soft:#3a352e; --sub:#5a5349; --muted:#8d8678;
+      --paper-0:#fbf9f4; --paper:#f4f1e8; --paper-2:#e9e4d7;
+      --brand:#2f3a3f; --brand-2:#26302f; --accent:#9a5b3e; --accent-2:#7e4830;
+      --gold:#9c8350; --line:rgba(33,31,28,.15); --line-soft:rgba(33,31,28,.07);
+      --r:5px; --serif:'Noto Serif TC',serif; --sans:'Noto Sans TC',system-ui,sans-serif; --accent-f:'Fraunces',serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;font-size:16px;}
+    body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.75;padding-top:66px;-webkit-font-smoothing:antialiased;}
+    a{text-decoration:none;color:inherit;}
+    ul{list-style:none;}
+    .container{max-width:1080px;margin:0 auto;padding:0 32px;}
+    section{padding:88px 0;}
+    .ic{width:18px;height:18px;flex-shrink:0;}
+    .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.74rem;font-weight:700;letter-spacing:.14em;color:var(--gold);margin-bottom:18px;}
+    .eyebrow::before{content:'';width:30px;height:1px;background:var(--gold);}
+    .section-title{font-family:var(--serif);font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:700;line-height:1.32;letter-spacing:.01em;margin-bottom:16px;}
+    .section-sub{font-size:.95rem;color:var(--sub);max-width:34em;line-height:1.9;}
+    .btn{display:inline-flex;align-items:center;gap:9px;font-size:.9rem;font-weight:700;padding:14px 28px;border:none;cursor:pointer;border-radius:var(--r);transition:background .2s,border-color .2s,color .2s;}
+    .btn-accent{background:var(--accent);color:var(--paper-0);}
+    .btn-accent:hover{background:var(--accent-2);}
+    .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
+    .btn-ghost:hover{border-color:var(--ink);}
+
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(244,241,232,.85);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .35s,background .35s;}
+    #nav.scrolled{background:rgba(244,241,232,.96);border-bottom:1px solid var(--line);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;}
+    .nav-logo{font-family:var(--serif);font-size:1.18rem;font-weight:700;letter-spacing:.04em;}
+    .nav-logo em{font-style:normal;color:var(--accent);}
+    .nav-links{display:flex;gap:28px;}
+    .nav-links a{font-size:.86rem;color:var(--sub);font-weight:500;transition:color .2s;}
+    .nav-links a:hover{color:var(--accent);}
+    .nav-cta{font-size:.82rem;padding:9px 18px;}
+    .nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+    .nav-burger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;}
+
+    /* HERO */
+    #hero{background:var(--paper);padding:0;}
+    .hero-wrap{min-height:78vh;display:flex;flex-direction:column;justify-content:center;padding:80px 0 64px;max-width:54rem;}
+    .hero-h1{font-family:var(--serif);font-size:clamp(2.4rem,5.2vw,3.9rem);font-weight:700;line-height:1.26;letter-spacing:.02em;margin-bottom:26px;}
+    .hero-h1 .accent{color:var(--accent);}
+    .hero-lead{font-size:1.1rem;color:var(--ink-soft);line-height:1.95;max-width:30em;margin-bottom:34px;}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+    .hero-textlink{display:inline-flex;align-items:center;gap:7px;font-size:.92rem;font-weight:700;border-bottom:1.5px solid var(--ink);padding-bottom:2px;}
+    .hero-textlink:hover{color:var(--accent);border-color:var(--accent);}
+    .hero-meta{margin-top:44px;display:flex;gap:36px;flex-wrap:wrap;}
+    .hm-num{font-family:var(--accent-f);font-size:2rem;font-weight:600;color:var(--accent);line-height:1;}
+    .hm-label{font-size:.78rem;color:var(--muted);margin-top:6px;}
+
+    /* WORKS */
+    #works{background:var(--paper-0);}
+    .works-head{max-width:32em;margin-bottom:52px;}
+    .work{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:64px;}
+    .work:last-child{margin-bottom:0;}
+    .work:nth-child(even) .work-media{order:2;}
+    .work-frame{aspect-ratio:4/3;background:var(--paper-2);border:1.5px dashed rgba(33,31,28,.24);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;color:var(--muted);padding:28px;}
+    .work-frame .cam{width:30px;height:30px;opacity:.5;}
+    .work-frame .lbl{font-size:.8rem;line-height:1.6;max-width:230px;}
+    .work-tag{font-family:var(--accent-f);font-style:italic;font-size:.85rem;color:var(--gold);margin-bottom:10px;}
+    .work-name{font-family:var(--serif);font-size:1.5rem;font-weight:700;margin-bottom:12px;}
+    .work-desc{font-size:.92rem;color:var(--sub);line-height:1.9;margin-bottom:18px;}
+    .work-feats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
+    .work-feat{font-size:.74rem;color:var(--brand);background:var(--paper-2);border-radius:99px;padding:4px 12px;}
+    .work-link{display:inline-flex;align-items:center;gap:7px;font-size:.9rem;font-weight:700;color:var(--accent);border-bottom:1.5px solid var(--accent);padding-bottom:2px;}
+
+    /* APPROACH */
+    #approach{background:var(--paper);}
+    .appr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:50px;}
+    .appr-n{font-family:var(--accent-f);font-size:1.6rem;font-weight:600;color:var(--gold);margin-bottom:12px;}
+    .appr-name{font-family:var(--serif);font-size:1.15rem;font-weight:700;margin-bottom:8px;}
+    .appr-desc{font-size:.87rem;color:var(--sub);line-height:1.85;}
+
+    /* CTA */
+    #cta{background:var(--brand);}
+    .cta-inner{padding:80px 0;text-align:center;}
+    .cta-inner h2{font-family:var(--serif);font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:700;color:var(--paper-0);margin-bottom:14px;}
+    .cta-inner p{color:rgba(251,249,244,.72);font-size:.98rem;line-height:1.85;max-width:34em;margin:0 auto 32px;}
+    .cta-btn{background:var(--paper-0);color:var(--brand-2);}
+    .cta-btn:hover{background:#fff;}
+
+    /* FOOTER */
+    footer{background:#191f20;color:rgba(251,249,244,.55);padding:48px 0 28px;}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+    .footer-logo{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--paper-0);}
+    .footer-logo em{font-style:normal;color:var(--gold);}
+    .footer-contact{display:flex;gap:20px;flex-wrap:wrap;font-size:.84rem;}
+    .footer-contact a:hover{color:var(--paper-0);}
+    .footer-bottom{border-top:1px solid rgba(251,249,244,.1);margin-top:28px;padding-top:22px;font-size:.74rem;color:rgba(251,249,244,.3);}
+
+    .fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+    .fade-in.visible{opacity:1;transform:translateY(0);}
+
+    @media (max-width:880px){
+      .nav-links,.nav-cta{display:none;}
+      .nav-burger{display:flex;}
+      .nav-links.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:rgba(244,241,232,.98);backdrop-filter:blur(14px);padding:24px 32px;gap:20px;border-bottom:1px solid var(--line);z-index:199;}
+      .work{grid-template-columns:1fr;gap:24px;margin-bottom:52px;}
+      .work:nth-child(even) .work-media{order:0;}
+      .appr-grid{grid-template-columns:1fr;gap:26px;}
+      section{padding:62px 0;}
+    }
+    @media (max-width:480px){.container{padding:0 22px;}.hero-meta{gap:24px;}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;}html{scroll-behavior:auto;}.fade-in{opacity:1;transform:none;}}
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container nav-inner">
+    <div class="nav-logo">蕭丞叡<em>.</em>設計</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#works">作品</a></li>
+      <li><a href="#approach">怎麼合作</a></li>
+      <li><a href="#cta">聯絡我</a></li>
+    </ul>
+    <a href="#cta" class="btn btn-accent nav-cta">聊聊你的網站</a>
+    <button class="nav-burger" id="burger" onclick="toggleMenu()" aria-label="選單"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="container">
+    <div class="hero-wrap fade-in">
+      <div class="eyebrow">台灣在地業者・網站設計</div>
+      <h1 class="hero-h1">幫你的店，做一個<br><span class="accent">會帶客人上門</span>的網站</h1>
+      <p class="hero-lead">餐廳、農場、民宿、診所…我專做台灣在地業者的網站。手機看得舒服、Google 搜得到、設計有質感——不是套一套就交差的模板貨。</p>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-accent">看看作品</a>
+        <a href="#cta" class="hero-textlink">聊聊你的需求　→</a>
+      </div>
+      <div class="hero-meta">
+        <div><div class="hm-num">15 天</div><div class="hm-label">一般交付時程</div></div>
+        <div><div class="hm-num">100%</div><div class="hm-label">手機完整適配</div></div>
+        <div><div class="hm-num">SEO</div><div class="hm-label">Google 搜得到</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="container">
+    <div class="works-head fade-in">
+      <div class="eyebrow">作品</div>
+      <h2 class="section-title">最近做的幾個網站</h2>
+      <p class="section-sub">每個網站都依業者的個性量身設計，配色、字體、語氣都不一樣，不套同一個模板。</p>
+    </div>
+
+    <!-- 餐廳 -->
+    <article class="work fade-in">
+      <div class="work-media">
+        <a href="ama_kitchen_v2.html" class="work-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：阿嬤ê灶跤 網站截圖]</span>
+        </a>
+      </div>
+      <div class="work-body">
+        <div class="work-tag">台南・家常台菜</div>
+        <h3 class="work-name">阿嬤ê灶跤</h3>
+        <p class="work-desc">五十年的台菜老店。用明體標題、墨綠＋赭紅的沉穩配色，做出老字號的溫度，文案全是阿嬤會說的口語。</p>
+        <div class="work-feats"><span class="work-feat">明體標題</span><span class="work-feat">編輯式菜單</span><span class="work-feat">線上訂位</span><span class="work-feat">含完整菜單子頁</span></div>
+        <a href="ama_kitchen_v2.html" class="work-link">看這個網站　→</a>
+      </div>
+    </article>
+
+    <!-- 農場 -->
+    <article class="work fade-in">
+      <div class="work-media">
+        <a href="farm_v3.html" class="work-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：日光小農場 網站截圖]</span>
+        </a>
+      </div>
+      <div class="work-body">
+        <div class="work-tag">南投・友善農場</div>
+        <h3 class="work-name">日光小農場</h3>
+        <p class="work-desc">不灑農藥的小農場。橄欖綠＋土赭的大地配色、編輯式的當季作物表，把第二代友善耕作的真實故事說出來。</p>
+        <div class="work-feats"><span class="work-feat">大地色系</span><span class="work-feat">作物季節表</span><span class="work-feat">採果預約</span><span class="work-feat">住宿介紹</span></div>
+        <a href="farm_v3.html" class="work-link">看這個網站　→</a>
+      </div>
+    </article>
+
+    <!-- 診所 -->
+    <article class="work fade-in">
+      <div class="work-media">
+        <a href="clinic_v3.html" class="work-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：康德牙醫 網站截圖]</span>
+        </a>
+      </div>
+      <div class="work-body">
+        <div class="work-tag">台中・牙醫診所</div>
+        <h3 class="work-name">康德牙醫診所</h3>
+        <p class="work-desc">乾淨專業的牙醫診所。改用無襯線字體與靜謐藍＋治癒綠，強調醫病溝通與看診流程，讓怕看牙的人安心。</p>
+        <div class="work-feats"><span class="work-feat">無襯線・專業感</span><span class="work-feat">看診流程</span><span class="work-feat">醫師資歷</span><span class="work-feat">LINE 預約</span></div>
+        <a href="clinic_v3.html" class="work-link">看這個網站　→</a>
+      </div>
+    </article>
+
+    <!-- 民宿 -->
+    <article class="work fade-in">
+      <div class="work-media">
+        <a href="homestay_v3.html" class="work-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：霧里山居 網站截圖]</span>
+        </a>
+      </div>
+      <div class="work-body">
+        <div class="work-tag">南投・山中民宿</div>
+        <h3 class="work-name">霧里山居</h3>
+        <p class="work-desc">鹿谷茶園裡的四房民宿。深褐＋陶土的溫暖木質配色、明體標題，把「只接四組客人、像朋友招待」的安靜感說出來。</p>
+        <div class="work-feats"><span class="work-feat">溫暖木質色</span><span class="work-feat">房型介紹</span><span class="work-feat">周邊景點</span><span class="work-feat">訂房須知</span></div>
+        <a href="homestay_v3.html" class="work-link">看這個網站　→</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="container">
+    <div class="fade-in" style="max-width:32em;">
+      <div class="eyebrow">怎麼合作</div>
+      <h2 class="section-title">簡單、透明、不囉嗦</h2>
+      <p class="section-sub">從聊需求到上線，全程清楚。你只要提供店裡的資訊和照片，剩下的交給我。</p>
+    </div>
+    <div class="appr-grid">
+      <div class="fade-in"><div class="appr-n">01</div><div class="appr-name">先聊聊</div><div class="appr-desc">了解你的店、客人是誰、最想達成什麼。我會給你方向和報價，確認了才開始。</div></div>
+      <div class="fade-in"><div class="appr-n">02</div><div class="appr-name">設計與製作</div><div class="appr-desc">依你的店量身設計。你提供文字和照片，我來排版、優化、做手機版與 SEO。</div></div>
+      <div class="fade-in"><div class="appr-n">03</div><div class="appr-name">上線與照顧</div><div class="appr-desc">部署上線、設定 Google，並教你怎麼更新。也可以交給我做月費維護。</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner fade-in">
+      <h2>想幫你的店做個網站？</h2>
+      <p>不管你是已經有網站想改版，還是從零開始，都歡迎先聊聊。第一次諮詢免費，我會誠實告訴你需不需要、怎麼做最划算。</p>
+      <a href="mailto:rainhihi0487@gmail.com" class="btn cta-btn">寫信給我聊聊</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">蕭丞叡<em>.</em>設計</div>
+      <div class="footer-contact">
+        <a href="mailto:rainhihi0487@gmail.com">rainhihi0487@gmail.com</a>
+        <a href="#works">作品</a>
+        <a href="#cta">聯絡</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 蕭丞叡 網頁設計</div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+  window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50));
+  const io=new IntersectionObserver(es=>{es.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*70);});},{threshold:.1});
+  document.querySelectorAll('.fade-in').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

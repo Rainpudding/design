@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="日光小農場 | 南投國姓友善農場・採果與食農體驗">
+  <meta property="og:description" content="南投國姓的友善小農場，第二代用不灑農藥的方式種番茄、草莓與香草。週末來採果、帶孩子認識土地，也有兩間樸實的住宿。">
+  <meta property="og:image" content="https://sunlight-farm.tw/og-image.jpg">
+  <link rel="canonical" href="https://sunlight-farm.tw">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="日光小農場 — 南投縣國姓鄉的友善耕作小農場。第二代不灑農藥種番茄、草莓、香草，提供採果體驗、親子食農、農場導覽與住宿。預約 049-2461888。">
+  <title>日光小農場 | 南投國姓友善農場・採果體驗・親子食農</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "日光小農場",
+    "description": "南投國姓的友善耕作小農場，提供採果體驗、親子食農與住宿。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "國姓鄉長福村XX路12號",
+      "addressLocality": "國姓鄉",
+      "addressRegion": "南投縣",
+      "postalCode": "544",
+      "addressCountry": "TW"
+    },
+    "telephone": "049-2461888",
+    "url": "https://sunlight-farm.tw",
+    "openingHours": "We-Mo 09:00-17:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "180"
+    },
+    "sameAs": ["https://facebook.com/sunlightfarm", "https://instagram.com/sunlightfarm"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 — 替換 G-XXXXXXXXXX 後啟用 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <style>
+    :root {
+      /* palette-farm（橄欖深綠 + 土赭 + 燕麥白）*/
+      --ink:      #2a2620;
+      --ink-soft: #41392e;
+      --sub:      #5f564a;
+      --muted:    #918874;
+      --paper-0:  #f8f5ec;
+      --paper:    #f3efe6;
+      --paper-2:  #e8e1d1;
+      --brand:    #3a4a2e;
+      --brand-2:  #303e26;
+      --accent:   #8a5a3c;
+      --accent-2: #6f4730;
+      --moss:     #6f7a55;
+      --line:     rgba(42,38,32,.16);
+      --line-soft:rgba(42,38,32,.08);
+      --gold:     #b08d57;
+      --r:        5px;
+      --serif:  'Noto Serif TC', serif;
+      --sans:   'Noto Sans TC', system-ui, -apple-system, sans-serif;
+      --accent-f:'Fraunces', 'Noto Serif TC', serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--sans); background: var(--paper); color: var(--ink);
+      line-height: 1.75; padding-top: 68px; -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    img { display: block; width: 100%; object-fit: cover; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 92px 0; }
+    .ic { width: 18px; height: 18px; flex-shrink: 0; }
+
+    .eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: .74rem; font-weight: 700; letter-spacing: .14em; color: var(--gold); margin-bottom: 20px; }
+    .eyebrow::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+    .section-title { font-family: var(--serif); font-size: clamp(1.7rem, 3.4vw, 2.5rem); font-weight: 700; line-height: 1.32; color: var(--ink); letter-spacing: .01em; margin-bottom: 16px; }
+    .section-sub { font-size: .95rem; color: var(--sub); max-width: 32em; line-height: 1.9; }
+
+    .btn { display: inline-flex; align-items: center; gap: 9px; font-family: var(--sans); font-size: .9rem; font-weight: 700; padding: 13px 26px; border: none; cursor: pointer; border-radius: var(--r); transition: background .2s, color .2s, border-color .2s; }
+    .btn-accent { background: var(--accent); color: var(--paper-0); }
+    .btn-accent:hover { background: var(--accent-2); }
+    .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+    .btn-ghost:hover { border-color: var(--ink); }
+
+    .img-frame { position: relative; background: var(--paper-2); border: 1.5px dashed rgba(42,38,32,.26); border-radius: var(--r); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; color: var(--muted); padding: 28px; }
+    .img-frame .cam { width: 30px; height: 30px; opacity: .5; }
+    .img-frame .lbl { font-size: .8rem; line-height: 1.65; letter-spacing: .02em; max-width: 230px; }
+
+    .textlink { display: inline-flex; align-items: center; gap: 7px; font-size: .92rem; font-weight: 700; color: var(--ink); border-bottom: 1.5px solid var(--ink); padding-bottom: 2px; }
+    .textlink:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(243,239,230,.82); backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color .35s, background .35s; }
+    #nav.scrolled { background: rgba(243,239,230,.95); border-bottom: 1px solid var(--line); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--ink); letter-spacing: .04em; }
+    .nav-logo em { font-style: normal; color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { font-size: .86rem; color: var(--sub); font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+    .nav-cta { font-size: .82rem; padding: 9px 18px; }
+    .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .nav-burger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; }
+
+    /* HERO */
+    #hero { background: var(--paper); padding: 0; }
+    .hero-wrap { display: grid; grid-template-columns: 1.08fr .92fr; gap: 72px; align-items: center; min-height: 86vh; padding: 64px 0 56px; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: .76rem; font-weight: 700; letter-spacing: .14em; color: var(--gold); margin-bottom: 26px; }
+    .hero-eyebrow::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+    .hero-h1 { font-family: var(--serif); font-size: clamp(2.4rem, 5vw, 3.7rem); font-weight: 700; line-height: 1.28; color: var(--ink); letter-spacing: .02em; margin-bottom: 28px; }
+    .hero-h1 .accent { color: var(--accent); }
+    .hero-lead { font-size: 1.06rem; color: var(--ink-soft); line-height: 1.95; max-width: 28em; margin-bottom: 28px; }
+    .hero-note { display: flex; align-items: center; gap: 9px; font-size: .85rem; color: var(--sub); margin-bottom: 36px; }
+    .hero-note .ic { width: 16px; height: 16px; color: var(--gold); }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .hero-actions .btn-accent { padding: 15px 28px; }
+    .hero-tel-num { font-family: var(--accent-f); font-weight: 500; letter-spacing: .03em; }
+    .hero-frame { aspect-ratio: 4/5; }
+    .hero-stamp { position: absolute; top: 18px; right: 18px; font-family: var(--accent-f); font-style: italic; font-size: .82rem; color: var(--gold); border: 1px solid var(--gold); border-radius: 99px; padding: 4px 14px; background: var(--paper-0); }
+
+    /* NOTICE */
+    .notice-bar { background: var(--brand); color: var(--paper-0); font-size: .84rem; text-align: center; padding: 12px 20px; letter-spacing: .02em; }
+    .notice-bar strong { color: #d8c08a; font-weight: 700; }
+
+    /* STORY */
+    #story { background: var(--paper-0); }
+    .story-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 64px; align-items: start; }
+    .story-media { position: relative; }
+    .story-frame { aspect-ratio: 3/4; }
+    .story-badge { position: absolute; bottom: -22px; right: -18px; background: var(--brand); color: var(--paper-0); padding: 18px 22px; border-radius: var(--r); }
+    .story-badge-num { font-family: var(--accent-f); font-size: 2.1rem; font-weight: 600; line-height: 1; }
+    .story-badge-label { font-size: .72rem; color: rgba(248,245,236,.78); margin-top: 5px; letter-spacing: .04em; }
+    .story-body { padding-top: 8px; }
+    .story-quote { font-family: var(--serif); font-size: 1.18rem; color: var(--ink); font-weight: 500; line-height: 1.95; margin: 22px 0 26px; padding-left: 22px; border-left: 2px solid var(--accent); }
+    .story-quote cite { display: block; font-style: normal; font-size: .85rem; color: var(--muted); margin-top: 14px; font-family: var(--sans); }
+    .story-text p { font-size: .94rem; color: var(--sub); line-height: 1.95; margin-bottom: 16px; }
+    .vals { margin-top: 32px; display: grid; gap: 4px; }
+    .val { display: grid; grid-template-columns: 46px 1fr; gap: 16px; padding: 18px 0; border-top: 1px solid var(--line-soft); }
+    .val:last-child { border-bottom: 1px solid var(--line-soft); }
+    .val-n { font-family: var(--accent-f); font-size: 1.1rem; font-weight: 500; color: var(--gold); }
+    .val b { font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--ink); display: block; margin-bottom: 4px; }
+    .val p { font-size: .85rem; color: var(--sub); line-height: 1.75; }
+
+    /* EXPERIENCES */
+    #experiences { background: var(--paper); }
+    .exp-head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 24px; margin-bottom: 50px; }
+    .exp-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 28px; align-items: start; }
+    .exp-card .exp-frame { margin-bottom: 18px; }
+    .exp-card:first-child .exp-frame { aspect-ratio: 4/5; }
+    .exp-card:not(:first-child) .exp-frame { aspect-ratio: 4/3; }
+    .exp-tag { font-family: var(--accent-f); font-style: italic; font-size: .8rem; color: var(--gold); margin-bottom: 8px; }
+    .exp-name { font-family: var(--serif); font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+    .exp-card:first-child .exp-name { font-size: 1.5rem; }
+    .exp-card:not(:first-child) .exp-name { font-size: 1.15rem; }
+    .exp-desc { font-size: .86rem; color: var(--sub); line-height: 1.85; margin-bottom: 12px; }
+    .exp-card:first-child .exp-desc { font-size: .92rem; }
+    .exp-meta { font-family: var(--accent-f); font-size: .9rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+    /* SEASON (produce calendar) */
+    #season { background: var(--paper-0); }
+    .season-list { column-count: 2; column-gap: 64px; margin-top: 30px; }
+    .season-block { break-inside: avoid; margin-bottom: 36px; }
+    .season-h { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; color: var(--ink); display: flex; align-items: baseline; gap: 14px; margin-bottom: 6px; }
+    .season-h .en { font-family: var(--accent-f); font-style: italic; font-size: .82rem; font-weight: 400; color: var(--gold); }
+    .season-rule { height: 1px; background: var(--line); margin-bottom: 12px; }
+    .crop { display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; padding: 13px 0; border-bottom: 1px solid var(--line-soft); align-items: baseline; }
+    .crop-name { font-family: var(--serif); font-size: 1.02rem; font-weight: 600; color: var(--ink); }
+    .crop-when { font-family: var(--accent-f); font-size: .9rem; color: var(--accent); }
+    .crop-desc { grid-column: 1 / 2; font-size: .81rem; color: var(--sub); line-height: 1.7; }
+
+    /* STAY */
+    #stay { background: var(--paper); }
+    .stay-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 50px; }
+    .stay-card .stay-frame { aspect-ratio: 16/10; margin-bottom: 18px; }
+    .stay-name { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .stay-desc { font-size: .88rem; color: var(--sub); line-height: 1.85; margin-bottom: 14px; }
+    .stay-foot { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .stay-price { font-family: var(--accent-f); font-size: 1.3rem; font-weight: 600; color: var(--accent); }
+    .stay-price small { font-family: var(--sans); font-size: .78rem; color: var(--muted); font-weight: 400; }
+    .stay-feat { font-size: .78rem; color: var(--muted); }
+
+    /* REVIEWS */
+    #reviews { background: var(--paper-0); }
+    .rev-top { display: grid; grid-template-columns: auto 1fr; gap: 56px; align-items: center; margin-bottom: 52px; padding-bottom: 44px; border-bottom: 1px solid var(--line); }
+    .score-num { font-family: var(--accent-f); font-size: 4.4rem; font-weight: 600; color: var(--ink); line-height: 1; }
+    .score-stars { color: var(--gold); font-size: 1.05rem; letter-spacing: 3px; margin: 10px 0 6px; }
+    .score-count { font-size: .76rem; color: var(--muted); }
+    .score-bars { display: grid; gap: 9px; max-width: 360px; }
+    .bar-row { display: flex; align-items: center; gap: 12px; font-size: .76rem; color: var(--sub); }
+    .bar-row > span:first-child { width: 22px; }
+    .bar-track { flex: 1; height: 5px; background: var(--paper-2); border-radius: 99px; overflow: hidden; }
+    .bar-fill { height: 100%; background: var(--gold); }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; align-items: start; }
+    .review-card:nth-child(2) { margin-top: 30px; }
+    .review-quote-mark { font-family: var(--accent-f); font-size: 2.6rem; color: var(--gold); line-height: .6; opacity: .55; }
+    .review-stars { color: var(--gold); font-size: .85rem; letter-spacing: 1px; margin: 12px 0; }
+    .review-text { font-family: var(--serif); font-size: .96rem; color: var(--ink-soft); line-height: 1.95; margin-bottom: 18px; }
+    .review-who { font-size: .72rem; color: var(--gold); letter-spacing: .04em; margin-bottom: 14px; }
+    .review-author { display: flex; align-items: baseline; gap: 10px; }
+    .review-name { font-size: .85rem; font-weight: 700; color: var(--ink); }
+    .review-date { font-size: .72rem; color: var(--muted); }
+
+    /* INFO */
+    #info { background: var(--paper); }
+    .info-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
+    .info-h { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; color: var(--ink); margin-bottom: 18px; }
+    .hours-row { display: flex; justify-content: space-between; font-size: .9rem; padding: 11px 0; border-bottom: 1px solid var(--line-soft); }
+    .hours-day { font-weight: 500; color: var(--ink-soft); }
+    .hours-time { color: var(--sub); font-family: var(--accent-f); font-variant-numeric: tabular-nums; }
+    .hours-closed { color: var(--muted); font-size: .84rem; }
+    .hours-today .hours-day { color: var(--accent); font-weight: 700; }
+    .hours-today .hours-time { color: var(--accent); }
+    .hours-foot { font-size: .76rem; color: var(--muted); margin-top: 14px; line-height: 1.7; }
+    .info-row { display: grid; grid-template-columns: 76px 1fr; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line-soft); }
+    .info-k { font-family: var(--accent-f); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); padding-top: 4px; }
+    .info-v { font-size: .92rem; color: var(--ink-soft); line-height: 1.75; }
+    .info-v a { color: var(--accent); font-weight: 700; font-family: var(--accent-f); }
+    .map-frame { aspect-ratio: 16/9; margin-top: 22px; }
+
+    /* CTA */
+    #cta { background: var(--brand); }
+    .cta-inner { padding: 76px 0; display: grid; grid-template-columns: 1fr auto; gap: 36px; align-items: center; }
+    .cta-eyebrow { color: #d8c08a; }
+    .cta-eyebrow::before { background: #d8c08a; }
+    .cta-text h2 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 700; color: var(--paper-0); margin-bottom: 12px; line-height: 1.4; }
+    .cta-text p { color: rgba(248,245,236,.72); font-size: .96rem; line-height: 1.8; max-width: 30em; }
+    .cta-actions { display: flex; flex-direction: column; gap: 12px; }
+    .cta-actions .btn { justify-content: center; }
+    .cta-btn-paper { background: var(--paper-0); color: var(--brand-2); }
+    .cta-btn-paper:hover { background: #fff; }
+    .cta-btn-line { background: transparent; color: var(--paper-0); border: 1px solid rgba(248,245,236,.45); }
+    .cta-btn-line:hover { border-color: var(--paper-0); }
+
+    /* FAQ */
+    #faq { background: var(--paper-0); }
+    .faq-head { margin-bottom: 44px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 40px; }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; cursor: pointer; font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--ink); }
+    .faq-q::after { content: '＋'; font-family: var(--sans); font-size: 1.1rem; color: var(--gold); flex-shrink: 0; transition: transform .25s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; font-size: .88rem; color: var(--sub); line-height: 1.85; transition: max-height .3s ease, padding .3s; }
+    .faq-item.open .faq-a { max-height: 240px; padding: 0 0 22px; }
+
+    /* FOOTER */
+    footer { background: #20271c; color: rgba(248,245,236,.6); padding: 72px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 52px; margin-bottom: 52px; }
+    .footer-logo { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; color: var(--paper-0); margin-bottom: 14px; letter-spacing: .04em; }
+    .footer-logo em { font-style: normal; color: #d8c08a; }
+    .footer-desc { font-size: .87rem; line-height: 1.9; margin-bottom: 22px; max-width: 26em; }
+    .footer-since { font-family: var(--accent-f); font-style: italic; font-size: .82rem; color: rgba(248,245,236,.4); }
+    .footer-contacts { display: grid; gap: 9px; margin-top: 6px; }
+    .footer-contact { display: flex; gap: 10px; font-size: .84rem; align-items: flex-start; }
+    .footer-contact .ic { width: 15px; height: 15px; color: #d8c08a; margin-top: 3px; }
+    .footer-col-title { font-size: .73rem; font-weight: 700; letter-spacing: .12em; color: var(--paper-0); margin-bottom: 20px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { font-size: .85rem; color: rgba(248,245,236,.55); transition: color .2s; }
+    .footer-links a:hover { color: var(--paper-0); }
+    .footer-bottom { border-top: 1px solid rgba(248,245,236,.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: .74rem; color: rgba(248,245,236,.32); flex-wrap: wrap; gap: 8px; }
+    .footer-bottom a { color: rgba(248,245,236,.5); }
+    .footer-bottom a:hover { color: var(--paper-0); }
+
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* MOBILE STICKY */
+    .mobile-cta-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 300; background: rgba(243,239,230,.96); backdrop-filter: blur(12px); border-top: 1px solid var(--line); padding: 11px 16px 15px; gap: 10px; }
+    .mobile-cta-bar a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; font-size: .86rem; font-weight: 700; padding: 13px; border-radius: var(--r); }
+    .mcta-tel { background: var(--accent); color: var(--paper-0); }
+    .mcta-map { background: transparent; color: var(--brand); border: 1px solid var(--brand); }
+
+    @media (max-width: 940px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-burger { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 68px; left: 0; right: 0; background: rgba(243,239,230,.98); backdrop-filter: blur(14px); padding: 26px 32px; gap: 22px; border-bottom: 1px solid var(--line); z-index: 199; }
+      .hero-wrap { grid-template-columns: 1fr; gap: 40px; min-height: auto; padding: 48px 0; }
+      .hero-frame { aspect-ratio: 16/10; }
+      .story-layout { grid-template-columns: 1fr; gap: 56px; }
+      .story-frame { aspect-ratio: 16/10; }
+      .story-badge { bottom: -18px; right: 16px; }
+      .exp-grid { grid-template-columns: 1fr; gap: 36px; }
+      .exp-card:first-child .exp-frame, .exp-card:not(:first-child) .exp-frame { aspect-ratio: 16/10; }
+      .season-list { column-count: 1; }
+      .exp-head { grid-template-columns: 1fr; }
+      .stay-grid { grid-template-columns: 1fr; }
+      .rev-top { grid-template-columns: 1fr; gap: 28px; }
+      .review-grid { grid-template-columns: 1fr; }
+      .review-card:nth-child(2) { margin-top: 0; }
+      .info-layout { grid-template-columns: 1fr; gap: 44px; }
+      .cta-inner { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+      section { padding: 64px 0; }
+      .mobile-cta-bar { display: flex; }
+      body { padding-bottom: 74px; }
+    }
+    @media (max-width: 480px) { .container { padding: 0 22px; } .faq-grid { grid-template-columns: 1fr; } .hero-h1 { font-size: 2.15rem; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } html { scroll-behavior: auto; } .fade-in { opacity: 1; transform: none; } }
+    @media print { #nav, .mobile-cta-bar, .hero-actions, #cta { display: none !important; } body { padding-top: 0; } .img-frame { display: none; } section { padding: 28px 0; } .fade-in { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <div class="nav-logo">日光<em>小</em>農場</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#story">關於農場</a></li>
+      <li><a href="#experiences">來玩什麼</a></li>
+      <li><a href="#season">當季作物</a></li>
+      <li><a href="#stay">住一晚</a></li>
+      <li><a href="#info">怎麼來</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:049-2461888" class="btn btn-accent nav-cta">預約專線</a>
+    </div>
+    <button class="nav-burger" id="burger" onclick="toggleMenu()" aria-label="選單"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-wrap">
+      <div class="hero-text fade-in">
+        <div class="hero-eyebrow">南投・國姓　友善小農場</div>
+        <h1 class="hero-h1">來田裡走走，<br>採一籃<span class="accent">剛熟的果子</span></h1>
+        <p class="hero-lead">我們是一家不灑農藥的小農場。沒有遊樂設施，就是真正的田、會流汗的體驗，還有摘下來就能吃的番茄和草莓。</p>
+        <div class="hero-note">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          週三至週一 09:00–17:00（週二休園）・採果需先預約
+        </div>
+        <div class="hero-actions">
+          <a href="tel:049-2461888" class="btn btn-accent">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            預約採果 <span class="hero-tel-num">049-2461888</span>
+          </a>
+          <a href="#experiences" class="textlink">看看能玩什麼　→</a>
+        </div>
+      </div>
+      <div class="hero-media fade-in">
+        <div class="img-frame hero-frame">
+          <span class="hero-stamp">Since 1989</span>
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：農場全景，或一家人在田裡採果的實拍直幅照]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICE -->
+<div class="notice-bar">
+  目前是<strong>番茄與草莓季</strong>，週末名額較搶手，建議提前 2-3 天電話預約。
+</div>
+
+<!-- STORY -->
+<section id="story">
+  <div class="container">
+    <div class="story-layout">
+      <div class="story-media fade-in">
+        <div class="img-frame story-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：農場主人在田裡工作的照片]</span>
+        </div>
+        <div class="story-badge">
+          <div class="story-badge-num">第二代</div>
+          <div class="story-badge-label">從爸爸的田接手</div>
+        </div>
+      </div>
+      <div class="story-body fade-in">
+        <div class="eyebrow">關於日光小農場</div>
+        <h2 class="section-title">本來只是想把<br>爸爸的田，好好種下去</h2>
+        <blockquote class="story-quote">
+          「我爸種了一輩子的田，用很多藥。我接手後想試試看不灑藥能不能種起來，前三年幾乎全軍覆沒，第四年才慢慢抓到訣竅。」
+          <cite>— 阿哲　農場第二代</cite>
+        </blockquote>
+        <div class="story-text">
+          <p>日光小農場在國姓鄉的山腳下，這片地是阿哲的爸爸民國78年開始種的。十年前阿哲從台北辭職回來接手，決定改用不灑農藥的友善方式種。</p>
+          <p>剛開始被蟲吃光、被鄰居笑傻，但他慢慢學會跟蟲共處、用草生栽培。現在農場種番茄、草莓和各種香草，週末開放讓人來採、來走走，也讓城市的孩子知道，番茄不是長在超市架上的。</p>
+        </div>
+        <ol class="vals">
+          <li class="val"><span class="val-n">01</span><div><b>不灑農藥</b><p>採草生栽培，用友善的方式跟蟲和草共處，摘下來擦一擦就能吃。</p></div></li>
+          <li class="val"><span class="val-n">02</span><div><b>小農場、慢步調</b><p>每天限量接待，不趕人潮。來這裡是來放鬆的，不是來人擠人的。</p></div></li>
+          <li class="val"><span class="val-n">03</span><div><b>真的下田</b><p>沒有罐頭式的觀光活動，是真正踩在土裡、會流汗、會弄髒手的體驗。</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences">
+  <div class="container">
+    <div class="exp-head fade-in">
+      <div>
+        <div class="eyebrow">來玩什麼</div>
+        <h2 class="section-title">在田裡，慢慢過一天</h2>
+      </div>
+      <p class="section-sub" style="text-align:right;max-width:18em;">活動都要先預約，我們好準備、也才能好好招呼你。</p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card fade-in">
+        <div class="img-frame exp-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：採果體驗實拍，手摘番茄/草莓特寫最好]</span>
+        </div>
+        <div class="exp-tag">最受歡迎</div>
+        <h3 class="exp-name">採果體驗</h3>
+        <p class="exp-desc">跟著我們走進田裡，學怎麼分辨熟成、怎麼摘不傷果。摘多少帶多少，現摘的番茄在田邊就能吃，那個甜跟超市買的真的不一樣。</p>
+        <div class="exp-meta">每人 $250 起（含一籃）・約 1 小時</div>
+      </div>
+      <div class="exp-card fade-in">
+        <div class="img-frame exp-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：親子食農體驗照]</span>
+        </div>
+        <div class="exp-tag">親子推薦</div>
+        <h3 class="exp-name">小農夫食農課</h3>
+        <p class="exp-desc">適合帶孩子。下田認識作物、做一份簡單的田園點心。</p>
+        <div class="exp-meta">每組 $600・約 2 小時</div>
+      </div>
+      <div class="exp-card fade-in">
+        <div class="img-frame exp-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：香草導覽或農場散步照]</span>
+        </div>
+        <div class="exp-tag">輕鬆走走</div>
+        <h3 class="exp-name">香草園散步</h3>
+        <p class="exp-desc">繞農場走一圈，認識香草、摘一把回家泡茶。</p>
+        <div class="exp-meta">每人 $150・約 40 分</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEASON -->
+<section id="season">
+  <div class="container">
+    <div class="fade-in" style="margin-bottom:8px;">
+      <div class="eyebrow">當季作物</div>
+      <h2 class="section-title">什麼時候來，採什麼</h2>
+      <p class="section-sub">作物看天吃飯，時間是大概的範圍，來之前打通電話確認最準。</p>
+    </div>
+    <div class="season-list fade-in">
+      <div class="season-block">
+        <div class="season-h">番茄 <span class="en">tomato</span></div>
+        <div class="season-rule"></div>
+        <div class="crop"><div class="crop-name">玉女小番茄</div><div class="crop-when">12–4 月</div><div class="crop-desc">皮薄多汁、甜度高，是我們的招牌，現摘最好吃。</div></div>
+        <div class="crop"><div class="crop-name">黑柿大番茄</div><div class="crop-when">1–3 月</div><div class="crop-desc">適合切盤沾醬油膏，老一輩的吃法。</div></div>
+      </div>
+      <div class="season-block">
+        <div class="season-h">草莓 <span class="en">strawberry</span></div>
+        <div class="season-rule"></div>
+        <div class="crop"><div class="crop-name">香水草莓</div><div class="crop-when">12–3 月</div><div class="crop-desc">香氣足，孩子最愛，週末常常一早就被採完。</div></div>
+      </div>
+      <div class="season-block">
+        <div class="season-h">香草 <span class="en">herbs</span></div>
+        <div class="season-rule"></div>
+        <div class="crop"><div class="crop-name">薄荷・檸檬香茅</div><div class="crop-when">全年</div><div class="crop-desc">摘回家泡茶、入菜都好，散步順手採。</div></div>
+        <div class="crop"><div class="crop-name">迷迭香・羅勒</div><div class="crop-when">3–10 月</div><div class="crop-desc">煮義大利麵、烤肉的好朋友。</div></div>
+      </div>
+      <div class="season-block">
+        <div class="season-h">季節野菜 <span class="en">seasonal</span></div>
+        <div class="season-rule"></div>
+        <div class="crop"><div class="crop-name">當令時蔬</div><div class="crop-when">看季節</div><div class="crop-desc">田裡有什麼就賣什麼，當天現採，賣完為止。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAY -->
+<section id="stay">
+  <div class="container">
+    <div class="fade-in">
+      <div class="eyebrow">住一晚</div>
+      <h2 class="section-title">留下來，聽蟲鳴入睡</h2>
+      <p class="section-sub">我們只有兩間房，很樸素，但能讓你真正慢下來。住宿含隔天的農場早餐。</p>
+    </div>
+    <div class="stay-grid">
+      <div class="stay-card fade-in">
+        <div class="img-frame stay-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：田園雙人房實拍]</span>
+        </div>
+        <h3 class="stay-name">田邊雙人房</h3>
+        <p class="stay-desc">推開窗就是菜田，木頭傢俱、簡單乾淨。適合想安靜放空的兩個人。</p>
+        <div class="stay-foot">
+          <div class="stay-price">$2,400 <small>/ 晚（含早餐）</small></div>
+          <div class="stay-feat">獨立衛浴・含採果體驗</div>
+        </div>
+      </div>
+      <div class="stay-card fade-in">
+        <div class="img-frame stay-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：家庭房實拍]</span>
+        </div>
+        <h3 class="stay-name">一家人房</h3>
+        <p class="stay-desc">兩大床，住得下一家四口。孩子可以一早就衝去田裡，是很多家庭的回憶。</p>
+        <div class="stay-foot">
+          <div class="stay-price">$3,800 <small>/ 晚（含早餐）</small></div>
+          <div class="stay-feat">可加床・含食農體驗</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="eyebrow fade-in">客人的話</div>
+    <div class="rev-top fade-in">
+      <div class="score-box">
+        <div class="score-num">4.9</div>
+        <div class="score-stars">★★★★★</div>
+        <div class="score-count">Google 評論　180 則以上</div>
+      </div>
+      <div class="score-bars">
+        <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:94%"></div></div><span>94%</span></div>
+        <div class="bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:5%"></div></div><span>5%</span></div>
+        <div class="bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span>1%</span></div>
+        <div class="bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+        <div class="bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+      </div>
+    </div>
+    <div class="review-grid">
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">小孩第一次知道番茄長在藤上，摘到不肯走。老闆很有耐心地教，現摘的番茄真的甜，回程買了一大袋。</p>
+        <div class="review-who">親子採果</div>
+        <div class="review-author"><span class="review-name">陳 O 婷</span><span class="review-date">2025 年 2 月</span></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">住了一晚，晚上真的只有蟲叫，安靜到不可思議。早餐是現採的菜，簡單但很好吃。不是華麗的民宿，但很療癒。</p>
+        <div class="review-who">田邊雙人房</div>
+        <div class="review-author"><span class="review-name">林 O 哲</span><span class="review-date">2025 年 1 月</span></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">喜歡這種不做作的農場，沒有一堆人工設施，就是真的田。老闆聊起友善耕作很有熱情，買了他們的香草回家種。</p>
+        <div class="review-who">香草園散步</div>
+        <div class="review-author"><span class="review-name">黃 O 真</span><span class="review-date">2024 年 12 月</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO -->
+<section id="info">
+  <div class="container">
+    <div class="eyebrow fade-in">怎麼來</div>
+    <h2 class="section-title fade-in" style="margin-bottom:48px;">開園時間與位置</h2>
+    <div class="info-layout">
+      <div class="info-block fade-in">
+        <div class="info-h">開園時間</div>
+        <div class="hours-row" data-day="週一"><span class="hours-day">週一</span><span class="hours-time">09:00 – 17:00</span></div>
+        <div class="hours-row" data-day="週二"><span class="hours-day">週二</span><span class="hours-closed">休園</span></div>
+        <div class="hours-row" data-day="週三"><span class="hours-day">週三</span><span class="hours-time">09:00 – 17:00</span></div>
+        <div class="hours-row" data-day="週四"><span class="hours-day">週四</span><span class="hours-time">09:00 – 17:00</span></div>
+        <div class="hours-row" data-day="週五"><span class="hours-day">週五</span><span class="hours-time">09:00 – 17:00</span></div>
+        <div class="hours-row" data-day="週六"><span class="hours-day">週六</span><span class="hours-time">08:30 – 17:30</span></div>
+        <div class="hours-row" data-day="週日"><span class="hours-day">週日</span><span class="hours-time">08:30 – 17:30</span></div>
+        <p class="hours-foot">採果與體驗都需先預約。雨天部分活動會調整，請來電確認。</p>
+      </div>
+      <div class="info-block fade-in">
+        <div class="info-h">農場在這裡</div>
+        <div class="info-row"><div class="info-k">地址</div><div class="info-v">南投縣國姓鄉長福村XX路12號</div></div>
+        <div class="info-row"><div class="info-k">電話</div><div class="info-v"><a href="tel:049-2461888">049-2461888</a></div></div>
+        <div class="info-row"><div class="info-k">開車</div><div class="info-v">國道6號國姓交流道下，約 15 分鐘。農場有免費停車場。</div></div>
+        <div class="info-row"><div class="info-k">提醒</div><div class="info-v">山路較窄，請放慢車速；建議穿好走的鞋、戴帽子。</div></div>
+        <div class="img-frame map-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="lbl">[此處嵌入 Google 地圖 iframe]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <div class="eyebrow cta-eyebrow">找個週末來吧</div>
+        <h2>挑個好天氣，來田裡待一天</h2>
+        <p>採果和體驗都要先預約，打通電話或加 LINE，我們幫你安排，也跟你說當週採得到什麼。</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:049-2461888" class="btn cta-btn-paper">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          預約專線 049-2461888
+        </a>
+        <a href="https://maps.google.com/?q=南投縣國姓鄉長福村" target="_blank" rel="noopener" class="btn cta-btn-line">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Google 地圖導航
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-head fade-in">
+      <div class="eyebrow">來之前想問的</div>
+      <h2 class="section-title">常見問題</h2>
+    </div>
+    <div class="faq-grid fade-in">
+      <div class="faq-item">
+        <div class="faq-q">一定要預約嗎？</div>
+        <div class="faq-a">採果和體驗都要先預約，因為我們每天限量、也要看當天採得到什麼。直接來可能會撲空喔，先打通電話最保險。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">採果怎麼算錢？</div>
+        <div class="faq-a">體驗費每人 $250 起、含一籃，超過的部分秤重計價。當季作物價格會公告，現場也會跟你說清楚。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">下雨天還能來嗎？</div>
+        <div class="faq-a">小雨我們會調整路線、發雨具；大雨部分田區會關閉。出發前請來電確認，我們不會讓你白跑一趟。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">可以帶寵物嗎？</div>
+        <div class="faq-a">可以，但請繫好牽繩、留意不要踩踏作物與其他客人。住宿則僅部分情況開放，請先告知。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">日光<em>小</em>農場</div>
+        <p class="footer-desc">一家不灑農藥的小農場。我們種得不多，但每一顆都讓你安心吃。</p>
+        <div class="footer-since">Since 1989・南投國姓</div>
+        <div class="footer-contacts">
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>南投縣國姓鄉長福村XX路12號</span></div>
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>049-2461888</span></div>
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>@sunlightfarm</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">逛逛</div>
+        <div class="footer-links">
+          <a href="#story">關於農場</a>
+          <a href="#experiences">來玩什麼</a>
+          <a href="#season">當季作物</a>
+          <a href="#stay">住一晚</a>
+          <a href="#info">怎麼來</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">找我們</div>
+        <div class="footer-links">
+          <a href="https://lin.ee/[LINE官方帳號ID]" target="_blank" rel="noopener">LINE 預約</a>
+          <a href="https://instagram.com/sunlightfarm" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/sunlightfarm" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://maps.google.com/?q=南投縣國姓鄉長福村" target="_blank" rel="noopener">Google 地圖</a>
+          <a href="tel:049-2461888">預約專線</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 日光小農場．版權所有</span>
+      <span>網站設計　<a href="#">蕭丞叡 網頁設計</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY -->
+<div class="mobile-cta-bar">
+  <a href="tel:049-2461888" class="mcta-tel">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    預約採果
+  </a>
+  <a href="https://maps.google.com/?q=南投縣國姓鄉長福村" target="_blank" rel="noopener" class="mcta-map">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    導航
+  </a>
+</div>
+
+<script>
+  function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => { if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 70); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+
+  const days = ['週日','週一','週二','週三','週四','週五','週六'];
+  const today = days[new Date().getDay()];
+  document.querySelectorAll('.hours-row').forEach(row => {
+    if (row.dataset.day === today) row.classList.add('hours-today');
+  });
+
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+  });
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+    el.addEventListener('click', () => { if (typeof gtag === 'function') gtag('event', 'phone_click', { event_category: 'contact' }); });
+  });
+  document.querySelectorAll('a[href*="google.com/maps"], a[href*="goo.gl/maps"]').forEach(el => {
+    el.addEventListener('click', () => { if (typeof gtag === 'function') gtag('event', 'map_click', { event_category: 'contact' }); });
+  });
+</script>
+</body>
+</html>

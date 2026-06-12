@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="霧里山居 | 南投鹿谷・藏在茶園裡的山中民宿">
+  <meta property="og:description" content="南投鹿谷、溪頭附近的山中民宿。四間房、被茶園與竹林包圍，早晨有雲霧、夜裡有蟲鳴。適合想真正安靜幾天的人。">
+  <meta property="og:image" content="https://wuli-stay.tw/og-image.jpg">
+  <link rel="canonical" href="https://wuli-stay.tw">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="霧里山居 — 南投鹿谷的山中民宿，鄰近溪頭、杉林溪。四間房被茶園與竹林環繞，含早餐。適合安靜度假、避暑。訂房 049-2751888。">
+  <title>霧里山居 | 南投鹿谷山中民宿・溪頭杉林溪住宿</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BedAndBreakfast",
+    "name": "霧里山居",
+    "description": "南投鹿谷的山中民宿，鄰近溪頭、杉林溪，被茶園與竹林環繞。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "鹿谷鄉內湖村XX巷8號",
+      "addressLocality": "鹿谷鄉",
+      "addressRegion": "南投縣",
+      "postalCode": "558",
+      "addressCountry": "TW"
+    },
+    "telephone": "049-2751888",
+    "url": "https://wuli-stay.tw",
+    "priceRange": "NT$2,800 - NT$5,200",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "210"
+    },
+    "sameAs": ["https://facebook.com/wulistay", "https://instagram.com/wulistay"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 — 替換 G-XXXXXXXXXX 後啟用 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <style>
+    :root {
+      /* palette-homestay-mountain（深褐 + 陶土 + 奶油）*/
+      --ink:#2c2722; --ink-soft:#45382c; --sub:#645545; --muted:#968873;
+      --paper-0:#faf5ec; --paper:#f6f1e7; --paper-2:#ebe2d2;
+      --brand:#4a3a2c; --brand-2:#3c2f23; --accent:#a8694a; --accent-2:#8a553b;
+      --moss:#6b7163; --line:rgba(44,39,34,.16); --line-soft:rgba(44,39,34,.08); --gold:#9c7c4d;
+      --r:5px; --serif:'Noto Serif TC',serif; --sans:'Noto Sans TC',system-ui,sans-serif; --accent-f:'Fraunces',serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;font-size:16px;}
+    body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.75;padding-top:68px;-webkit-font-smoothing:antialiased;}
+    a{text-decoration:none;color:inherit;}
+    ul{list-style:none;}
+    img{display:block;width:100%;object-fit:cover;}
+    .container{max-width:1120px;margin:0 auto;padding:0 32px;}
+    section{padding:92px 0;}
+    .ic{width:18px;height:18px;flex-shrink:0;}
+    .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.74rem;font-weight:700;letter-spacing:.14em;color:var(--gold);margin-bottom:20px;}
+    .eyebrow::before{content:'';width:30px;height:1px;background:var(--gold);}
+    .section-title{font-family:var(--serif);font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:700;line-height:1.32;letter-spacing:.01em;margin-bottom:16px;}
+    .section-sub{font-size:.95rem;color:var(--sub);max-width:32em;line-height:1.9;}
+    .btn{display:inline-flex;align-items:center;gap:9px;font-size:.9rem;font-weight:700;padding:13px 26px;border:none;cursor:pointer;border-radius:var(--r);transition:background .2s,color .2s,border-color .2s;}
+    .btn-accent{background:var(--accent);color:var(--paper-0);}
+    .btn-accent:hover{background:var(--accent-2);}
+    .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line);}
+    .btn-ghost:hover{border-color:var(--ink);}
+    .img-frame{position:relative;background:var(--paper-2);border:1.5px dashed rgba(44,39,34,.26);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;color:var(--muted);padding:28px;}
+    .img-frame .cam{width:30px;height:30px;opacity:.5;}
+    .img-frame .lbl{font-size:.8rem;line-height:1.65;letter-spacing:.02em;max-width:230px;}
+    .textlink{display:inline-flex;align-items:center;gap:7px;font-size:.92rem;font-weight:700;color:var(--ink);border-bottom:1.5px solid var(--ink);padding-bottom:2px;}
+    .textlink:hover{color:var(--accent);border-color:var(--accent);}
+
+    #nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(246,241,231,.82);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .35s,background .35s;}
+    #nav.scrolled{background:rgba(246,241,231,.95);border-bottom:1px solid var(--line);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;}
+    .nav-logo{font-family:var(--serif);font-size:1.25rem;font-weight:700;color:var(--ink);letter-spacing:.04em;}
+    .nav-logo em{font-style:normal;color:var(--accent);}
+    .nav-links{display:flex;gap:28px;}
+    .nav-links a{font-size:.86rem;color:var(--sub);font-weight:500;transition:color .2s;}
+    .nav-links a:hover{color:var(--accent);}
+    .nav-cta{font-size:.82rem;padding:9px 18px;}
+    .nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+    .nav-burger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;}
+
+    #hero{background:var(--paper);padding:0;}
+    .hero-wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:72px;align-items:center;min-height:86vh;padding:64px 0 56px;}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.76rem;font-weight:700;letter-spacing:.14em;color:var(--gold);margin-bottom:26px;}
+    .hero-eyebrow::before{content:'';width:30px;height:1px;background:var(--gold);}
+    .hero-h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.7rem);font-weight:700;line-height:1.28;color:var(--ink);letter-spacing:.02em;margin-bottom:28px;}
+    .hero-h1 .accent{color:var(--accent);}
+    .hero-lead{font-size:1.06rem;color:var(--ink-soft);line-height:1.95;max-width:28em;margin-bottom:28px;}
+    .hero-note{display:flex;align-items:center;gap:9px;font-size:.85rem;color:var(--sub);margin-bottom:36px;}
+    .hero-note .ic{width:16px;height:16px;color:var(--gold);}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+    .hero-actions .btn-accent{padding:15px 28px;}
+    .hero-tel-num{font-family:var(--accent-f);font-weight:500;letter-spacing:.03em;}
+    .hero-frame{aspect-ratio:4/5;}
+    .hero-stamp{position:absolute;top:18px;right:18px;font-family:var(--accent-f);font-style:italic;font-size:.82rem;color:var(--gold);border:1px solid var(--gold);border-radius:99px;padding:4px 14px;background:var(--paper-0);}
+
+    .notice-bar{background:var(--brand);color:var(--paper-0);font-size:.84rem;text-align:center;padding:12px 20px;letter-spacing:.02em;}
+    .notice-bar strong{color:#dcc09a;font-weight:700;}
+
+    #story{background:var(--paper-0);}
+    .story-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:64px;align-items:start;}
+    .story-media{position:relative;}
+    .story-frame{aspect-ratio:3/4;}
+    .story-badge{position:absolute;bottom:-22px;right:-18px;background:var(--brand);color:var(--paper-0);padding:18px 22px;border-radius:var(--r);}
+    .story-badge-num{font-family:var(--accent-f);font-size:1.7rem;font-weight:600;line-height:1.1;}
+    .story-badge-label{font-size:.72rem;color:rgba(250,245,236,.78);margin-top:5px;letter-spacing:.04em;}
+    .story-body{padding-top:8px;}
+    .story-quote{font-family:var(--serif);font-size:1.18rem;color:var(--ink);font-weight:500;line-height:1.95;margin:22px 0 26px;padding-left:22px;border-left:2px solid var(--accent);}
+    .story-quote cite{display:block;font-style:normal;font-size:.85rem;color:var(--muted);margin-top:14px;font-family:var(--sans);}
+    .story-text p{font-size:.94rem;color:var(--sub);line-height:1.95;margin-bottom:16px;}
+    .vals{margin-top:32px;display:grid;gap:4px;}
+    .val{display:grid;grid-template-columns:46px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line-soft);}
+    .val:last-child{border-bottom:1px solid var(--line-soft);}
+    .val-n{font-family:var(--accent-f);font-size:1.1rem;font-weight:500;color:var(--gold);}
+    .val b{font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--ink);display:block;margin-bottom:4px;}
+    .val p{font-size:.85rem;color:var(--sub);line-height:1.75;}
+
+    /* ROOMS */
+    #rooms{background:var(--paper);}
+    .rooms-head{max-width:32em;margin-bottom:50px;}
+    .room{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-bottom:56px;}
+    .room:last-child{margin-bottom:0;}
+    .room:nth-child(even) .room-media{order:2;}
+    .room-frame{aspect-ratio:4/3;}
+    .room-tag{font-family:var(--accent-f);font-style:italic;font-size:.82rem;color:var(--gold);margin-bottom:10px;}
+    .room-name{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--ink);margin-bottom:12px;}
+    .room-desc{font-size:.92rem;color:var(--sub);line-height:1.9;margin-bottom:18px;}
+    .room-amen{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
+    .room-amen span{font-size:.74rem;color:var(--brand);background:var(--paper-2);border-radius:99px;padding:4px 12px;}
+    .room-foot{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+    .room-price{font-family:var(--accent-f);font-size:1.5rem;font-weight:600;color:var(--accent);}
+    .room-price small{font-family:var(--sans);font-size:.78rem;color:var(--muted);font-weight:400;}
+
+    /* FEATURES */
+    #features{background:var(--paper-0);}
+    .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;}
+    .feat-n{font-family:var(--accent-f);font-size:1.5rem;font-weight:600;color:var(--gold);margin-bottom:12px;}
+    .feat-name{font-family:var(--serif);font-size:1.12rem;font-weight:700;margin-bottom:8px;}
+    .feat-desc{font-size:.86rem;color:var(--sub);line-height:1.85;}
+
+    /* AROUND */
+    #around{background:var(--paper);}
+    .around-list{column-count:2;column-gap:64px;margin-top:30px;}
+    .around-block{break-inside:avoid;margin-bottom:32px;}
+    .around-h{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--ink);display:flex;align-items:baseline;gap:14px;margin-bottom:6px;}
+    .around-h .en{font-family:var(--accent-f);font-style:italic;font-size:.8rem;color:var(--gold);}
+    .around-rule{height:1px;background:var(--line);margin-bottom:10px;}
+    .spot{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:12px 0;border-bottom:1px solid var(--line-soft);align-items:baseline;}
+    .spot-name{font-family:var(--serif);font-size:1.02rem;font-weight:600;color:var(--ink);}
+    .spot-time{font-family:var(--accent-f);font-size:.88rem;color:var(--accent);}
+    .spot-desc{grid-column:1/2;font-size:.81rem;color:var(--sub);line-height:1.7;}
+
+    #reviews{background:var(--paper-0);}
+    .rev-top{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center;margin-bottom:52px;padding-bottom:44px;border-bottom:1px solid var(--line);}
+    .score-num{font-family:var(--accent-f);font-size:4.4rem;font-weight:600;color:var(--ink);line-height:1;}
+    .score-stars{color:var(--gold);font-size:1.05rem;letter-spacing:3px;margin:10px 0 6px;}
+    .score-count{font-size:.76rem;color:var(--muted);}
+    .score-bars{display:grid;gap:9px;max-width:360px;}
+    .bar-row{display:flex;align-items:center;gap:12px;font-size:.76rem;color:var(--sub);}
+    .bar-row>span:first-child{width:22px;}
+    .bar-track{flex:1;height:5px;background:var(--paper-2);border-radius:99px;overflow:hidden;}
+    .bar-fill{height:100%;background:var(--gold);}
+    .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:start;}
+    .review-card:nth-child(2){margin-top:30px;}
+    .review-quote-mark{font-family:var(--accent-f);font-size:2.6rem;color:var(--gold);line-height:.6;opacity:.55;}
+    .review-stars{color:var(--gold);font-size:.85rem;letter-spacing:1px;margin:12px 0;}
+    .review-text{font-family:var(--serif);font-size:.96rem;color:var(--ink-soft);line-height:1.95;margin-bottom:18px;}
+    .review-who{font-size:.72rem;color:var(--gold);letter-spacing:.04em;margin-bottom:14px;}
+    .review-author{display:flex;align-items:baseline;gap:10px;}
+    .review-name{font-size:.85rem;font-weight:700;color:var(--ink);}
+    .review-date{font-size:.72rem;color:var(--muted);}
+
+    #info{background:var(--paper);}
+    .info-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start;}
+    .info-h{font-family:var(--serif);font-size:1.2rem;font-weight:600;color:var(--ink);margin-bottom:18px;}
+    .info-row{display:grid;grid-template-columns:84px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--line-soft);}
+    .info-k{font-family:var(--accent-f);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);padding-top:4px;}
+    .info-v{font-size:.92rem;color:var(--ink-soft);line-height:1.75;}
+    .info-v a{color:var(--accent);font-weight:700;font-family:var(--accent-f);}
+    .rules{display:grid;gap:10px;}
+    .rule{display:flex;gap:10px;font-size:.88rem;color:var(--sub);line-height:1.7;}
+    .rule .ic{width:16px;height:16px;color:var(--accent);margin-top:4px;}
+    .map-frame{aspect-ratio:16/9;margin-top:22px;}
+
+    #cta{background:var(--brand);}
+    .cta-inner{padding:76px 0;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center;}
+    .cta-eyebrow{color:#dcc09a;}
+    .cta-eyebrow::before{background:#dcc09a;}
+    .cta-text h2{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.3rem);font-weight:700;color:var(--paper-0);margin-bottom:12px;line-height:1.4;}
+    .cta-text p{color:rgba(250,245,236,.72);font-size:.96rem;line-height:1.8;max-width:30em;}
+    .cta-actions{display:flex;flex-direction:column;gap:12px;}
+    .cta-actions .btn{justify-content:center;}
+    .cta-btn-paper{background:var(--paper-0);color:var(--brand-2);}
+    .cta-btn-paper:hover{background:#fff;}
+    .cta-btn-line{background:transparent;color:var(--paper-0);border:1px solid rgba(250,245,236,.45);}
+    .cta-btn-line:hover{border-color:var(--paper-0);}
+
+    #faq{background:var(--paper-0);}
+    .faq-head{margin-bottom:44px;}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px;}
+    .faq-item{border-bottom:1px solid var(--line);}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;cursor:pointer;font-family:var(--serif);font-size:1rem;font-weight:600;color:var(--ink);}
+    .faq-q::after{content:'＋';font-family:var(--sans);font-size:1.1rem;color:var(--accent);flex-shrink:0;transition:transform .25s;}
+    .faq-item.open .faq-q::after{transform:rotate(45deg);}
+    .faq-a{max-height:0;overflow:hidden;font-size:.88rem;color:var(--sub);line-height:1.85;transition:max-height .3s ease,padding .3s;}
+    .faq-item.open .faq-a{max-height:260px;padding:0 0 22px;}
+
+    footer{background:#241d16;color:rgba(250,245,236,.6);padding:72px 0 28px;}
+    .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:52px;margin-bottom:52px;}
+    .footer-logo{font-family:var(--serif);font-size:1.4rem;font-weight:700;color:var(--paper-0);margin-bottom:14px;letter-spacing:.04em;}
+    .footer-logo em{font-style:normal;color:#dcc09a;}
+    .footer-desc{font-size:.87rem;line-height:1.9;margin-bottom:22px;max-width:26em;}
+    .footer-since{font-family:var(--accent-f);font-style:italic;font-size:.82rem;color:rgba(250,245,236,.4);}
+    .footer-contacts{display:grid;gap:9px;margin-top:6px;}
+    .footer-contact{display:flex;gap:10px;font-size:.84rem;align-items:flex-start;}
+    .footer-contact .ic{width:15px;height:15px;color:#dcc09a;margin-top:3px;}
+    .footer-col-title{font-size:.73rem;font-weight:700;letter-spacing:.12em;color:var(--paper-0);margin-bottom:20px;}
+    .footer-links{display:grid;gap:12px;}
+    .footer-links a{font-size:.85rem;color:rgba(250,245,236,.55);transition:color .2s;}
+    .footer-links a:hover{color:var(--paper-0);}
+    .footer-bottom{border-top:1px solid rgba(250,245,236,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:.74rem;color:rgba(250,245,236,.32);flex-wrap:wrap;gap:8px;}
+    .footer-bottom a{color:rgba(250,245,236,.5);}
+    .footer-bottom a:hover{color:var(--paper-0);}
+
+    .fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+    .fade-in.visible{opacity:1;transform:translateY(0);}
+
+    .mobile-cta-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:300;background:rgba(246,241,231,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:11px 16px 15px;gap:10px;}
+    .mobile-cta-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;font-size:.86rem;font-weight:700;padding:13px;border-radius:var(--r);}
+    .mcta-tel{background:var(--accent);color:var(--paper-0);}
+    .mcta-map{background:transparent;color:var(--brand);border:1px solid var(--brand);}
+
+    @media (max-width:940px){
+      .nav-links,.nav-cta{display:none;}
+      .nav-burger{display:flex;}
+      .nav-links.open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:rgba(246,241,231,.98);backdrop-filter:blur(14px);padding:26px 32px;gap:22px;border-bottom:1px solid var(--line);z-index:199;}
+      .hero-wrap{grid-template-columns:1fr;gap:40px;min-height:auto;padding:48px 0;}
+      .hero-frame{aspect-ratio:16/10;}
+      .story-layout{grid-template-columns:1fr;gap:56px;}
+      .story-frame{aspect-ratio:16/10;}
+      .story-badge{bottom:-18px;right:16px;}
+      .room{grid-template-columns:1fr;gap:22px;margin-bottom:48px;}
+      .room:nth-child(even) .room-media{order:0;}
+      .feat-grid{grid-template-columns:1fr;gap:26px;}
+      .around-list{column-count:1;}
+      .rev-top{grid-template-columns:1fr;gap:28px;}
+      .review-grid{grid-template-columns:1fr;}
+      .review-card:nth-child(2){margin-top:0;}
+      .info-layout{grid-template-columns:1fr;gap:44px;}
+      .cta-inner{grid-template-columns:1fr;}
+      .footer-grid{grid-template-columns:1fr;gap:36px;}
+      section{padding:64px 0;}
+      .mobile-cta-bar{display:flex;}
+      body{padding-bottom:74px;}
+    }
+    @media (max-width:480px){.container{padding:0 22px;}.faq-grid{grid-template-columns:1fr;}.hero-h1{font-size:2.15rem;}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;}html{scroll-behavior:auto;}.fade-in{opacity:1;transform:none;}}
+    @media print{#nav,.mobile-cta-bar,.hero-actions,#cta{display:none!important;}body{padding-top:0;}.img-frame{display:none;}section{padding:28px 0;}.fade-in{opacity:1;transform:none;}}
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container nav-inner">
+    <div class="nav-logo">霧里<em>山居</em></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#story">關於山居</a></li>
+      <li><a href="#rooms">房型</a></li>
+      <li><a href="#features">環境</a></li>
+      <li><a href="#around">周邊</a></li>
+      <li><a href="#info">訂房須知</a></li>
+    </ul>
+    <a href="tel:049-2751888" class="btn btn-accent nav-cta">訂房專線</a>
+    <button class="nav-burger" id="burger" onclick="toggleMenu()" aria-label="選單"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="container">
+    <div class="hero-wrap">
+      <div class="hero-text fade-in">
+        <div class="hero-eyebrow">南投・鹿谷　山中民宿</div>
+        <h1 class="hero-h1">在茶園與竹林間，<br><span class="accent">睡一場好覺</span></h1>
+        <p class="hero-lead">霧里山居只有四間房，藏在鹿谷的山裡。早上常有雲霧漫過茶園，晚上安靜到只剩蟲鳴。我們沒有很多設施，只有一個讓你真正慢下來的地方。</p>
+        <div class="hero-note">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          鄰近溪頭、杉林溪・含手作早餐・全館禁菸
+        </div>
+        <div class="hero-actions">
+          <a href="tel:049-2751888" class="btn btn-accent">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            訂房專線 <span class="hero-tel-num">049-2751888</span>
+          </a>
+          <a href="#rooms" class="textlink">看看房型　→</a>
+        </div>
+      </div>
+      <div class="hero-media fade-in">
+        <div class="img-frame hero-frame">
+          <span class="hero-stamp">鹿谷・內湖</span>
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：清晨茶園雲霧，或民宿外觀的實拍直幅照]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="notice-bar">
+  目前是<strong>避暑與賞螢季</strong>，週末與連假房間較搶手，建議提早 2 週訂房。
+</div>
+
+<section id="story">
+  <div class="container">
+    <div class="story-layout">
+      <div class="story-media fade-in">
+        <div class="img-frame story-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：主人夫妻或庭院一角的照片]</span>
+        </div>
+        <div class="story-badge">
+          <div class="story-badge-num">只有 4 間房</div>
+          <div class="story-badge-label">每天最多招待四組客人</div>
+        </div>
+      </div>
+      <div class="story-body fade-in">
+        <div class="eyebrow">關於霧里山居</div>
+        <h2 class="section-title">原本是我們自己的家，<br>後來想分享給更多人</h2>
+        <blockquote class="story-quote">
+          「城市住久了，我們搬回鹿谷老家。整理好房子後，常有朋友來借住，說睡得特別好。後來就乾脆改成民宿，但還是把每位客人當朋友招待。」
+          <cite>— 阿源 & 美雲　山居主人</cite>
+        </blockquote>
+        <div class="story-text">
+          <p>霧里山居在鹿谷內湖，四周是自家和鄰居的茶園。這裡海拔不高不低，夏天涼爽、清晨常起霧，因此取名「霧里」。</p>
+          <p>我們刻意只留四間房，不想搞成人擠人的旅館。早餐用在地食材手作，主人會跟你聊聊附近哪裡好走、哪間茶行的茶好喝。來這裡不是來趕行程的，是來把自己放空幾天。</p>
+        </div>
+        <ol class="vals">
+          <li class="val"><span class="val-n">01</span><div><b>只接四組客人</b><p>不超收、不吵雜。整個山居的安靜，是留給你的。</p></div></li>
+          <li class="val"><span class="val-n">02</span><div><b>手作早餐</b><p>在地食材現做，坐在能看見茶園的餐桌慢慢吃。</p></div></li>
+          <li class="val"><span class="val-n">03</span><div><b>像朋友的主人</b><p>需要安靜給你空間，需要建議我們也很樂意分享在地玩法。</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms">
+  <div class="container">
+    <div class="rooms-head fade-in">
+      <div class="eyebrow">房型</div>
+      <h2 class="section-title">挑一間，住下來</h2>
+      <p class="section-sub">四間房各有個性，都看得到綠意。房價含手作早餐與雙人份的下午茶。</p>
+    </div>
+
+    <article class="room fade-in">
+      <div class="room-media">
+        <div class="img-frame room-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：茶園景雙人房實拍]</span>
+        </div>
+      </div>
+      <div class="room-body">
+        <div class="room-tag">最受歡迎</div>
+        <h3 class="room-name">茶園景雙人房</h3>
+        <p class="room-desc">推開窗就是整片茶園，清晨能看雲霧流動。木質傢俱、一張舒服的大床，適合想安靜相處的兩個人。</p>
+        <div class="room-amen"><span>景觀大床</span><span>獨立衛浴</span><span>檜木浴桶</span><span>含早餐</span></div>
+        <div class="room-foot"><div class="room-price">$3,200 <small>/ 平日（雙人含早餐）</small></div></div>
+      </div>
+    </article>
+
+    <article class="room fade-in">
+      <div class="room-media">
+        <div class="img-frame room-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：竹林家庭房實拍]</span>
+        </div>
+      </div>
+      <div class="room-body">
+        <div class="room-tag">適合家庭</div>
+        <h3 class="room-name">竹林家庭房</h3>
+        <p class="room-desc">兩張大床、空間寬敞，窗外是搖曳的竹林。一家四口剛剛好，孩子可以在院子裡跑。</p>
+        <div class="room-amen"><span>兩大床</span><span>可加床</span><span>獨立衛浴</span><span>含早餐</span></div>
+        <div class="room-foot"><div class="room-price">$5,200 <small>/ 平日（四人含早餐）</small></div></div>
+      </div>
+    </article>
+
+    <article class="room fade-in">
+      <div class="room-media">
+        <div class="img-frame room-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：閣樓雙人房實拍]</span>
+        </div>
+      </div>
+      <div class="room-body">
+        <div class="room-tag">安靜角落</div>
+        <h3 class="room-name">閣樓雙人房</h3>
+        <p class="room-desc">在二樓的小閣樓，斜屋頂、小窗，最安靜的一間。適合想徹底放空、看書發呆的人。</p>
+        <div class="room-amen"><span>雙人床</span><span>獨立衛浴</span><span>閱讀角</span><span>含早餐</span></div>
+        <div class="room-foot"><div class="room-price">$2,800 <small>/ 平日（雙人含早餐）</small></div></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div class="fade-in" style="max-width:30em;">
+      <div class="eyebrow">環境</div>
+      <h2 class="section-title">這裡有的，和沒有的</h2>
+      <p class="section-sub">我們把心思放在「住得舒服」上，而不是塞滿用不到的設施。</p>
+    </div>
+    <div class="feat-grid">
+      <div class="fade-in"><div class="feat-n">01</div><div class="feat-name">看得到的綠</div><div class="feat-desc">每間房、餐桌、庭院，都被茶園或竹林包圍。早晨的霧是免費的風景。</div></div>
+      <div class="fade-in"><div class="feat-n">02</div><div class="feat-name">手作早餐</div><div class="feat-desc">在地蔬果、自製醬料，現做溫熱的早餐，坐看窗外慢慢吃。</div></div>
+      <div class="fade-in"><div class="feat-n">03</div><div class="feat-name">公共客廳</div><div class="feat-desc">有書、有茶、有黑膠唱機。晚上想喝杯茶聊天，這裡都在。</div></div>
+      <div class="fade-in"><div class="feat-n">04</div><div class="feat-name">免費停車</div><div class="feat-desc">門口就能停車，山路雖窄但好停，到了就能安心放鬆。</div></div>
+      <div class="fade-in"><div class="feat-n">05</div><div class="feat-name">全館禁菸</div><div class="feat-desc">為了空氣與安靜，全館室內禁菸，給每位客人乾淨的環境。</div></div>
+      <div class="fade-in"><div class="feat-n">06</div><div class="feat-name">在地建議</div><div class="feat-desc">主人熟悉鹿谷，能告訴你哪條步道好走、哪間茶行值得去。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AROUND -->
+<section id="around">
+  <div class="container">
+    <div class="fade-in" style="margin-bottom:8px;">
+      <div class="eyebrow">周邊</div>
+      <h2 class="section-title">出了門，可以去哪</h2>
+      <p class="section-sub">鹿谷一帶慢慢逛很舒服。以下是開車的大概時間，主人也能幫你安排路線。</p>
+    </div>
+    <div class="around-list fade-in">
+      <div class="around-block">
+        <div class="around-h">自然 <span class="en">nature</span></div>
+        <div class="around-rule"></div>
+        <div class="spot"><div class="spot-name">溪頭自然教育園區</div><div class="spot-time">約 20 分</div><div class="spot-desc">神木、大學池、空中走廊，森林浴的經典去處。</div></div>
+        <div class="spot"><div class="spot-name">杉林溪森林園區</div><div class="spot-time">約 50 分</div><div class="spot-desc">瀑布、花季、海拔更高更涼，適合一日遊。</div></div>
+      </div>
+      <div class="around-block">
+        <div class="around-h">茶與人文 <span class="en">tea & culture</span></div>
+        <div class="around-rule"></div>
+        <div class="spot"><div class="spot-name">鹿谷茶行群</div><div class="spot-time">約 10 分</div><div class="spot-desc">凍頂烏龍的故鄉，可以走訪茶行、試茶、買好茶。</div></div>
+        <div class="spot"><div class="spot-name">小半天竹林</div><div class="spot-time">約 15 分</div><div class="spot-desc">孟宗竹林與瀑布，拍照與散步都很美。</div></div>
+      </div>
+      <div class="around-block">
+        <div class="around-h">順遊 <span class="en">day trip</span></div>
+        <div class="around-rule"></div>
+        <div class="spot"><div class="spot-name">日月潭</div><div class="spot-time">約 60 分</div><div class="spot-desc">想跑遠一點，可以安排一天環潭、搭纜車。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <div class="eyebrow fade-in">住過的人說</div>
+    <div class="rev-top fade-in">
+      <div class="score-box">
+        <div class="score-num">4.9</div>
+        <div class="score-stars">★★★★★</div>
+        <div class="score-count">Google 評論　210 則以上</div>
+      </div>
+      <div class="score-bars">
+        <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:95%"></div></div><span>95%</span></div>
+        <div class="bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><span>4%</span></div>
+        <div class="bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span>1%</span></div>
+        <div class="bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+        <div class="bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+      </div>
+    </div>
+    <div class="review-grid">
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">真的很安靜。早上拉開窗簾看到茶園起霧的那一刻，覺得這趟值了。主人很親切但不打擾，早餐好吃到讓我多吃一碗。</p>
+        <div class="review-who">茶園景雙人房</div>
+        <div class="review-author"><span class="review-name">蔡 O 玲</span><span class="review-date">2025 年 5 月</span></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">帶爸媽來住，長輩說睡得很好。離溪頭近，白天去走步道、晚上回來泡茶聊天。不是豪華民宿，但很有家的感覺。</p>
+        <div class="review-who">竹林家庭房</div>
+        <div class="review-author"><span class="review-name">鄭 O 安</span><span class="review-date">2025 年 4 月</span></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-quote-mark">&ldquo;</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">一個人來放空，住閣樓房，安靜到可以聽見自己的呼吸。主人推薦的茶行很棒，買了茶回家。會想再來的地方。</p>
+        <div class="review-who">閣樓雙人房</div>
+        <div class="review-author"><span class="review-name">周 O 文</span><span class="review-date">2025 年 3 月</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="container">
+    <div class="eyebrow fade-in">訂房須知</div>
+    <h2 class="section-title fade-in" style="margin-bottom:48px;">住宿資訊與怎麼來</h2>
+    <div class="info-layout">
+      <div class="info-block fade-in">
+        <div class="info-h">入住資訊</div>
+        <div class="info-row"><div class="info-k">入住</div><div class="info-v">15:00 後</div></div>
+        <div class="info-row"><div class="info-k">退房</div><div class="info-v">11:00 前</div></div>
+        <div class="info-row"><div class="info-k">訂金</div><div class="info-v">訂房需付 50% 訂金，匯款後保留房間。</div></div>
+        <div class="info-row"><div class="info-k">取消</div><div class="info-v">入住前 7 天取消可全額退；7 天內依約定比例退還。</div></div>
+        <div class="rules" style="margin-top:22px;">
+          <div class="rule"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14"/></svg>全館室內禁菸</div>
+          <div class="rule"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14"/></svg>毛孩入住請先詢問</div>
+          <div class="rule"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14"/></svg>夜深請輕聲，留給彼此安靜</div>
+        </div>
+      </div>
+      <div class="info-block fade-in">
+        <div class="info-h">怎麼來</div>
+        <div class="info-row"><div class="info-k">地址</div><div class="info-v">南投縣鹿谷鄉內湖村XX巷8號</div></div>
+        <div class="info-row"><div class="info-k">電話</div><div class="info-v"><a href="tel:049-2751888">049-2751888</a></div></div>
+        <div class="info-row"><div class="info-k">開車</div><div class="info-v">國道3號竹山交流道下，往溪頭方向約 30 分鐘。山路較窄請放慢。</div></div>
+        <div class="info-row"><div class="info-k">客運</div><div class="info-v">可搭客運至溪頭，再電話聯繫接駁（需預約）。</div></div>
+        <div class="img-frame map-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="lbl">[此處嵌入 Google 地圖 iframe]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <div class="eyebrow cta-eyebrow">想找個安靜的地方</div>
+        <h2>挑幾天，來山裡住一晚</h2>
+        <p>房間不多，旺季很快就滿。先打通電話或加 LINE，我們幫你看日期、留房間，也跟你說當季適合做什麼。</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:049-2751888" class="btn cta-btn-paper">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          訂房專線 049-2751888
+        </a>
+        <a href="https://maps.google.com/?q=南投縣鹿谷鄉內湖村" target="_blank" rel="noopener" class="btn cta-btn-line">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Google 地圖導航
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="faq-head fade-in">
+      <div class="eyebrow">訂房前想問的</div>
+      <h2 class="section-title">常見問題</h2>
+    </div>
+    <div class="faq-grid fade-in">
+      <div class="faq-item">
+        <div class="faq-q">怎麼訂房？</div>
+        <div class="faq-a">電話或 LINE 告訴我們日期與人數，確認有房後付 50% 訂金（匯款）即完成預訂。我們會回傳訂房確認。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">房價含什麼？</div>
+        <div class="faq-a">房價已含手作早餐與雙人份下午茶。加人、加床費用會先跟你說清楚，不會有額外隱藏收費。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">可以帶寵物嗎？</div>
+        <div class="faq-a">我們很愛動物，但因房間數少、也要顧及其他客人，毛孩入住請務必「事先詢問」，我們再依狀況安排。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">沒有開車可以到嗎？</div>
+        <div class="faq-a">可以搭客運到溪頭，再跟我們預約接駁（有時段限制）。訂房時先告知，我們幫你安排。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">霧里<em>山居</em></div>
+        <p class="footer-desc">鹿谷山裡的四間房。我們把這裡當家，也把你當朋友招待。</p>
+        <div class="footer-since">南投・鹿谷內湖</div>
+        <div class="footer-contacts">
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>南投縣鹿谷鄉內湖村XX巷8號</span></div>
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>049-2751888</span></div>
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>@wulistay</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">逛逛</div>
+        <div class="footer-links">
+          <a href="#story">關於山居</a>
+          <a href="#rooms">房型</a>
+          <a href="#features">環境</a>
+          <a href="#around">周邊景點</a>
+          <a href="#info">訂房須知</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">訂房</div>
+        <div class="footer-links">
+          <a href="https://lin.ee/[LINE官方帳號ID]" target="_blank" rel="noopener">LINE 訂房</a>
+          <a href="tel:049-2751888">電話訂房</a>
+          <a href="https://maps.google.com/?q=南投縣鹿谷鄉內湖村" target="_blank" rel="noopener">Google 地圖</a>
+          <a href="https://instagram.com/wulistay" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 霧里山居．版權所有</span>
+      <span>網站設計　<a href="#">蕭丞叡 網頁設計</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar">
+  <a href="tel:049-2751888" class="mcta-tel">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    訂房專線
+  </a>
+  <a href="https://maps.google.com/?q=南投縣鹿谷鄉內湖村" target="_blank" rel="noopener" class="mcta-map">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    導航
+  </a>
+</div>
+
+<script>
+  function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+  window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',window.scrollY>50));
+  const io=new IntersectionObserver(es=>{es.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*70);});},{threshold:.1});
+  document.querySelectorAll('.fade-in').forEach(el=>io.observe(el));
+  document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+  document.querySelectorAll('a[href^="tel:"]').forEach(el=>el.addEventListener('click',()=>{if(typeof gtag==='function')gtag('event','phone_click',{event_category:'contact'});}));
+  document.querySelectorAll('a[href*="google.com/maps"], a[href*="goo.gl/maps"]').forEach(el=>el.addEventListener('click',()=>{if(typeof gtag==='function')gtag('event','map_click',{event_category:'contact'});}));
+</script>
+</body>
+</html>

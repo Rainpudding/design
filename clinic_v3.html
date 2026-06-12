@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="康德牙醫診所 | 台中西屯・溫和細心的牙科照護">
+  <meta property="og:description" content="台中西屯區牙醫診所，提供一般牙科、植牙、矯正、兒童牙科與牙周治療。重視溝通與低疼痛照護，看診前充分說明。預約 04-2316-1000。">
+  <meta property="og:image" content="https://kangde-dental.tw/og-image.jpg">
+  <link rel="canonical" href="https://kangde-dental.tw">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="康德牙醫診所 — 台中市西屯區牙醫診所。一般牙科、植牙、矯正、兒童牙科、牙周治療。重視醫病溝通、看診前充分說明，提供溫和的牙科照護。預約 04-2316-1000。">
+  <title>康德牙醫診所 | 台中西屯牙醫・植牙矯正兒童牙科</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "康德牙醫診所",
+    "description": "台中西屯區牙醫診所，提供一般牙科、植牙、矯正、兒童牙科與牙周治療。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "西屯路二段XX號",
+      "addressLocality": "西屯區",
+      "addressRegion": "台中市",
+      "postalCode": "407",
+      "addressCountry": "TW"
+    },
+    "telephone": "04-2316-1000",
+    "url": "https://kangde-dental.tw",
+    "medicalSpecialty": "Dentistry",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:30", "closes": "21:00"
+    }, {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "17:00"
+    }]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 — 替換 G-XXXXXXXXXX 後啟用 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <style>
+    :root {
+      /* palette-clinic（靜謐藍 + 治癒綠 + 純淨白）*/
+      --ink:      #233039;
+      --ink-soft: #36474f;
+      --sub:      #566671;
+      --muted:    #8a99a1;
+      --paper-0:  #ffffff;
+      --paper:    #fbfcfb;
+      --paper-2:  #eef2f2;
+      --brand:    #34566b;
+      --brand-2:  #2b4658;
+      --accent:   #4a8a7a;
+      --accent-2: #3c7263;
+      --mint:     #8aa9a0;
+      --line:     rgba(35,48,57,.13);
+      --line-soft:rgba(35,48,57,.07);
+      --gold:     #6f8a86;
+      --r:        6px;
+      --sans:   'Noto Sans TC', system-ui, -apple-system, sans-serif;
+      --accent-f:'Fraunces', serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.75; padding-top: 70px; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    img { display: block; width: 100%; object-fit: cover; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 90px 0; }
+    .ic { width: 18px; height: 18px; flex-shrink: 0; }
+
+    .eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: .74rem; font-weight: 700; letter-spacing: .14em; color: var(--accent); margin-bottom: 18px; }
+    .eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--accent); }
+    .section-title { font-family: var(--sans); font-size: clamp(1.7rem, 3.3vw, 2.4rem); font-weight: 700; line-height: 1.35; color: var(--ink); letter-spacing: .005em; margin-bottom: 16px; }
+    .section-sub { font-size: .95rem; color: var(--sub); max-width: 34em; line-height: 1.9; }
+
+    .btn { display: inline-flex; align-items: center; gap: 9px; font-size: .9rem; font-weight: 700; padding: 13px 26px; border: none; cursor: pointer; border-radius: var(--r); transition: background .2s, color .2s, border-color .2s; }
+    .btn-accent { background: var(--accent); color: #fff; }
+    .btn-accent:hover { background: var(--accent-2); }
+    .btn-brand { background: var(--brand); color: #fff; }
+    .btn-brand:hover { background: var(--brand-2); }
+    .btn-ghost { background: transparent; color: var(--brand); border: 1px solid var(--line); }
+    .btn-ghost:hover { border-color: var(--brand); }
+
+    .img-frame { position: relative; background: var(--paper-2); border: 1.5px dashed rgba(35,48,57,.22); border-radius: var(--r); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; color: var(--muted); padding: 28px; }
+    .img-frame .cam { width: 30px; height: 30px; opacity: .5; }
+    .img-frame .lbl { font-size: .8rem; line-height: 1.65; letter-spacing: .02em; max-width: 230px; }
+    .textlink { display: inline-flex; align-items: center; gap: 7px; font-size: .92rem; font-weight: 700; color: var(--brand); border-bottom: 1.5px solid var(--brand); padding-bottom: 2px; }
+    .textlink:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* NAV */
+    #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(251,252,251,.85); backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color .35s, background .35s; }
+    #nav.scrolled { background: rgba(251,252,251,.97); border-bottom: 1px solid var(--line); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+    .nav-logo { font-size: 1.22rem; font-weight: 700; color: var(--brand); letter-spacing: .03em; }
+    .nav-logo em { font-style: normal; color: var(--accent); }
+    .nav-links { display: flex; gap: 26px; }
+    .nav-links a { font-size: .86rem; color: var(--sub); font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-right { display: flex; align-items: center; gap: 14px; }
+    .nav-cta { font-size: .82rem; padding: 9px 18px; }
+    .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+    .nav-burger span { display: block; width: 22px; height: 2px; background: var(--brand); border-radius: 2px; }
+
+    /* HERO */
+    #hero { background: var(--paper); padding: 0; }
+    .hero-wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 68px; align-items: center; min-height: 84vh; padding: 60px 0 52px; }
+    .hero-h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); font-weight: 700; line-height: 1.3; color: var(--ink); letter-spacing: .01em; margin-bottom: 24px; }
+    .hero-h1 .accent { color: var(--accent); }
+    .hero-lead { font-size: 1.05rem; color: var(--ink-soft); line-height: 1.95; max-width: 28em; margin-bottom: 26px; }
+    .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; margin-bottom: 32px; }
+    .ht-item { display: flex; align-items: center; gap: 8px; font-size: .84rem; color: var(--sub); }
+    .ht-item .ic { width: 16px; height: 16px; color: var(--accent); }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .hero-actions .btn-accent { padding: 15px 28px; }
+    .hero-tel-num { font-family: var(--accent-f); font-weight: 500; letter-spacing: .03em; }
+    .hero-frame { aspect-ratio: 4/5; }
+
+    /* NOTICE */
+    .notice-bar { background: var(--brand); color: #fff; font-size: .84rem; text-align: center; padding: 12px 20px; letter-spacing: .02em; }
+    .notice-bar strong { color: #b8d8d0; font-weight: 700; }
+
+    /* SERVICES */
+    #services { background: var(--paper-0); }
+    .svc-head { max-width: 32em; margin-bottom: 48px; }
+    .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .svc-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 28px 24px; transition: border-color .2s; }
+    .svc-card:hover { border-color: var(--accent); }
+    .svc-ic { width: 42px; height: 42px; border-radius: 50%; background: var(--paper-2); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; color: var(--brand); }
+    .svc-name { font-size: 1.08rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .svc-desc { font-size: .85rem; color: var(--sub); line-height: 1.8; }
+
+    /* DOCTOR */
+    #doctor { background: var(--paper); }
+    .doc-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: start; }
+    .doc-frame { aspect-ratio: 3/4; }
+    .doc-quote { font-size: 1.16rem; color: var(--ink); font-weight: 500; line-height: 1.9; margin: 20px 0 24px; padding-left: 20px; border-left: 2px solid var(--accent); }
+    .doc-text p { font-size: .93rem; color: var(--sub); line-height: 1.95; margin-bottom: 16px; }
+    .doc-creds { margin-top: 26px; display: grid; gap: 2px; }
+    .cred { display: grid; grid-template-columns: 92px 1fr; gap: 16px; padding: 13px 0; border-top: 1px solid var(--line-soft); }
+    .cred:last-child { border-bottom: 1px solid var(--line-soft); }
+    .cred-k { font-family: var(--accent-f); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); padding-top: 3px; }
+    .cred-v { font-size: .89rem; color: var(--ink-soft); line-height: 1.7; }
+
+    /* PROCESS */
+    #process { background: var(--paper-0); }
+    .proc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+    .proc-step { position: relative; }
+    .proc-n { font-family: var(--accent-f); font-size: 2.2rem; font-weight: 600; color: var(--mint); line-height: 1; margin-bottom: 12px; }
+    .proc-name { font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .proc-desc { font-size: .84rem; color: var(--sub); line-height: 1.75; }
+
+    /* REVIEWS */
+    #reviews { background: var(--paper); }
+    .rev-top { display: grid; grid-template-columns: auto 1fr; gap: 56px; align-items: center; margin-bottom: 50px; padding-bottom: 42px; border-bottom: 1px solid var(--line); }
+    .score-num { font-family: var(--accent-f); font-size: 4.2rem; font-weight: 600; color: var(--ink); line-height: 1; }
+    .score-stars { color: #d8a93f; font-size: 1.05rem; letter-spacing: 3px; margin: 10px 0 6px; }
+    .score-count { font-size: .76rem; color: var(--muted); }
+    .score-bars { display: grid; gap: 9px; max-width: 360px; }
+    .bar-row { display: flex; align-items: center; gap: 12px; font-size: .76rem; color: var(--sub); }
+    .bar-row > span:first-child { width: 22px; }
+    .bar-track { flex: 1; height: 5px; background: var(--paper-2); border-radius: 99px; overflow: hidden; }
+    .bar-fill { height: 100%; background: #d8a93f; }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
+    .review-card { background: var(--paper-0); border: 1px solid var(--line); border-radius: var(--r); padding: 26px 24px; }
+    .review-card:nth-child(2) { margin-top: 26px; }
+    .review-stars { color: #d8a93f; font-size: .85rem; letter-spacing: 1px; margin-bottom: 12px; }
+    .review-text { font-size: .9rem; color: var(--ink-soft); line-height: 1.9; margin-bottom: 16px; }
+    .review-who { font-size: .72rem; color: var(--accent); letter-spacing: .04em; margin-bottom: 12px; }
+    .review-author { display: flex; align-items: baseline; gap: 10px; }
+    .review-name { font-size: .84rem; font-weight: 700; color: var(--ink); }
+    .review-date { font-size: .72rem; color: var(--muted); }
+
+    /* INFO */
+    #info { background: var(--paper-0); }
+    .info-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 54px; align-items: start; }
+    .info-h { font-size: 1.18rem; font-weight: 700; color: var(--ink); margin-bottom: 18px; }
+    .hours-row { display: flex; justify-content: space-between; font-size: .9rem; padding: 11px 0; border-bottom: 1px solid var(--line-soft); }
+    .hours-day { font-weight: 500; color: var(--ink-soft); }
+    .hours-time { color: var(--sub); font-family: var(--accent-f); font-variant-numeric: tabular-nums; }
+    .hours-closed { color: var(--muted); font-size: .84rem; }
+    .hours-today .hours-day { color: var(--accent); font-weight: 700; }
+    .hours-today .hours-time { color: var(--accent); }
+    .hours-foot { font-size: .76rem; color: var(--muted); margin-top: 14px; line-height: 1.7; }
+    .info-row { display: grid; grid-template-columns: 76px 1fr; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line-soft); }
+    .info-k { font-family: var(--accent-f); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); padding-top: 4px; }
+    .info-v { font-size: .92rem; color: var(--ink-soft); line-height: 1.75; }
+    .info-v a { color: var(--accent); font-weight: 700; font-family: var(--accent-f); }
+    .map-frame { aspect-ratio: 16/9; margin-top: 22px; }
+
+    /* CTA */
+    #cta { background: var(--brand); }
+    .cta-inner { padding: 74px 0; display: grid; grid-template-columns: 1fr auto; gap: 36px; align-items: center; }
+    .cta-eyebrow { color: #b8d8d0; }
+    .cta-eyebrow::before { background: #b8d8d0; }
+    .cta-text h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 12px; line-height: 1.4; }
+    .cta-text p { color: rgba(255,255,255,.75); font-size: .96rem; line-height: 1.8; max-width: 30em; }
+    .cta-actions { display: flex; flex-direction: column; gap: 12px; }
+    .cta-actions .btn { justify-content: center; }
+    .cta-btn-paper { background: #fff; color: var(--brand-2); }
+    .cta-btn-paper:hover { background: var(--paper-2); }
+    .cta-btn-line { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.45); }
+    .cta-btn-line:hover { border-color: #fff; }
+
+    /* FAQ */
+    #faq { background: var(--paper); }
+    .faq-head { margin-bottom: 42px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 40px; }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; cursor: pointer; font-size: 1rem; font-weight: 700; color: var(--ink); }
+    .faq-q::after { content: '＋'; font-size: 1.1rem; color: var(--accent); flex-shrink: 0; transition: transform .25s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; font-size: .88rem; color: var(--sub); line-height: 1.85; transition: max-height .3s ease, padding .3s; }
+    .faq-item.open .faq-a { max-height: 260px; padding: 0 0 22px; }
+
+    /* FOOTER */
+    footer { background: #1c2930; color: rgba(255,255,255,.6); padding: 70px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 50px; margin-bottom: 50px; }
+    .footer-logo { font-size: 1.35rem; font-weight: 700; color: #fff; margin-bottom: 14px; letter-spacing: .03em; }
+    .footer-logo em { font-style: normal; color: #8aa9a0; }
+    .footer-desc { font-size: .87rem; line-height: 1.9; margin-bottom: 22px; max-width: 26em; }
+    .footer-contacts { display: grid; gap: 9px; }
+    .footer-contact { display: flex; gap: 10px; font-size: .84rem; align-items: flex-start; }
+    .footer-contact .ic { width: 15px; height: 15px; color: #8aa9a0; margin-top: 3px; }
+    .footer-col-title { font-size: .73rem; font-weight: 700; letter-spacing: .12em; color: #fff; margin-bottom: 20px; }
+    .footer-links { display: grid; gap: 12px; }
+    .footer-links a { font-size: .85rem; color: rgba(255,255,255,.55); transition: color .2s; }
+    .footer-links a:hover { color: #fff; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: .74rem; color: rgba(255,255,255,.32); flex-wrap: wrap; gap: 8px; }
+    .footer-bottom a { color: rgba(255,255,255,.5); }
+    .footer-bottom a:hover { color: #fff; }
+
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* MOBILE STICKY */
+    .mobile-cta-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 300; background: rgba(251,252,251,.97); backdrop-filter: blur(12px); border-top: 1px solid var(--line); padding: 11px 16px 15px; gap: 8px; grid-template-columns: 1fr 1fr 1.4fr; }
+    .mobile-cta-bar a { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: .84rem; font-weight: 700; padding: 13px; border-radius: var(--r); }
+    .mcta-line { background: #06c755; color: #fff; }
+    .mcta-tel { background: var(--brand); color: #fff; }
+    .mcta-appt { background: var(--accent); color: #fff; }
+
+    @media (max-width: 940px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-burger { display: flex; }
+      .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 70px; left: 0; right: 0; background: rgba(251,252,251,.98); backdrop-filter: blur(14px); padding: 26px 32px; gap: 22px; border-bottom: 1px solid var(--line); z-index: 199; }
+      .hero-wrap { grid-template-columns: 1fr; gap: 38px; min-height: auto; padding: 44px 0; }
+      .hero-frame { aspect-ratio: 16/10; }
+      .svc-grid { grid-template-columns: 1fr 1fr; }
+      .doc-layout { grid-template-columns: 1fr; gap: 44px; }
+      .doc-frame { aspect-ratio: 16/10; }
+      .proc-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .rev-top { grid-template-columns: 1fr; gap: 26px; }
+      .review-grid { grid-template-columns: 1fr; }
+      .review-card:nth-child(2) { margin-top: 0; }
+      .info-layout { grid-template-columns: 1fr; gap: 42px; }
+      .cta-inner { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 34px; }
+      section { padding: 62px 0; }
+      .mobile-cta-bar { display: grid; }
+      body { padding-bottom: 74px; }
+    }
+    @media (max-width: 480px) { .container { padding: 0 22px; } .svc-grid { grid-template-columns: 1fr; } .faq-grid { grid-template-columns: 1fr; } .proc-grid { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } html { scroll-behavior: auto; } .fade-in { opacity: 1; transform: none; } }
+    @media print { #nav, .mobile-cta-bar, .hero-actions, #cta { display: none !important; } body { padding-top: 0; } .img-frame { display: none; } section { padding: 26px 0; } .fade-in { opacity: 1; transform: none; } }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <div class="nav-logo">康德<em>牙醫</em></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">診療項目</a></li>
+      <li><a href="#doctor">醫師團隊</a></li>
+      <li><a href="#process">看診流程</a></li>
+      <li><a href="#reviews">患者回饋</a></li>
+      <li><a href="#info">門診資訊</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:04-2316-1000" class="btn btn-accent nav-cta">預約看診</a>
+    </div>
+    <button class="nav-burger" id="burger" onclick="toggleMenu()" aria-label="選單"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-wrap">
+      <div class="hero-text fade-in">
+        <div class="eyebrow">台中西屯・牙醫診所</div>
+        <h1 class="hero-h1">看牙不用緊張，<br>我們會<span class="accent">慢慢跟你說清楚</span></h1>
+        <p class="hero-lead">我們知道很多人怕看牙。所以在這裡，每個療程開始前都會先讓你了解狀況、選擇方式，不會讓你在搞不清楚的情況下躺上診療椅。</p>
+        <div class="hero-trust">
+          <div class="ht-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1-6.3-4.6L5.7 21 8 13.9 2 9.4h7.6z"/></svg>Google 4.8 星好評</div>
+          <div class="ht-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>平日看診至 21:00</div>
+          <div class="ht-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3 8-8"/><path d="M21 12v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h11"/></svg>健保特約</div>
+        </div>
+        <div class="hero-actions">
+          <a href="tel:04-2316-1000" class="btn btn-accent">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            預約看診 <span class="hero-tel-num">04-2316-1000</span>
+          </a>
+          <a href="#services" class="textlink">看診療項目　→</a>
+        </div>
+      </div>
+      <div class="hero-media fade-in">
+        <div class="img-frame hero-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：明亮整潔的診間或候診區實拍直幅照]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICE -->
+<div class="notice-bar">
+  目前開放<strong>線上＆電話預約</strong>，當日急診請來電，我們會盡量為您安排。
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="svc-head fade-in">
+      <div class="eyebrow">診療項目</div>
+      <h2 class="section-title">我們能為你做的</h2>
+      <p class="section-sub">從定期檢查到專科治療，依你的狀況提供合適的方式，不會過度治療。</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card fade-in">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C8 2 6 5 6 9c0 5 2 13 4 13s2-4 2-4 0 4 2 4 4-8 4-13c0-4-2-7-6-7z"/></svg></div>
+        <div class="svc-name">一般牙科・洗牙</div>
+        <div class="svc-desc">蛀牙填補、定期洗牙與口腔檢查。健保給付項目會清楚說明。</div>
+      </div>
+      <div class="svc-card fade-in">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M7 8c0-2 2-4 5-4s5 2 5 4"/></svg></div>
+        <div class="svc-name">植牙</div>
+        <div class="svc-desc">缺牙重建，術前完整評估與 3D 影像規劃，過程充分溝通。</div>
+      </div>
+      <div class="svc-card fade-in">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg></div>
+        <div class="svc-name">齒列矯正</div>
+        <div class="svc-desc">傳統矯正與隱形矯正，依齒況與需求討論適合的方案。</div>
+      </div>
+      <div class="svc-card fade-in">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/></svg></div>
+        <div class="svc-name">兒童牙科</div>
+        <div class="svc-desc">用孩子能接受的步調看牙，建立不害怕看牙的好經驗。</div>
+      </div>
+      <div class="svc-card fade-in">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div>
+        <div class="svc-name">牙周治療</div>
+        <div class="svc-desc">牙齦發炎、流血、口氣問題的檢查與治療，從根本照護。</div>
+      </div>
+      <div class="svc-card fade-in">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2 5 5 .5-4 3.5 1.5 5L12 18l-4.5 3 1.5-5-4-3.5 5-.5z"/></svg></div>
+        <div class="svc-name">美容牙科</div>
+        <div class="svc-desc">居家／診間美白、陶瓷貼片等，會先評估是否適合再進行。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section id="doctor">
+  <div class="container">
+    <div class="doc-layout">
+      <div class="fade-in">
+        <div class="img-frame doc-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 8h3l2-2h8l2 2h3v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <span class="lbl">[此處放：醫師本人照片，白袍、親切自然]</span>
+        </div>
+      </div>
+      <div class="fade-in">
+        <div class="eyebrow">醫師團隊</div>
+        <h2 class="section-title">林醫師・院長</h2>
+        <blockquote class="doc-quote">「我希望病人離開診間時，是『知道自己牙齒發生什麼事、接下來怎麼做』，而不是只記得很痛、很貴。」</blockquote>
+        <div class="doc-text">
+          <p>林醫師執業超過 15 年，專長一般牙科與植牙。他相信「看牙最大的恐懼來自未知」，所以特別重視看診前的溝通與說明，會用模型、影像讓你看懂自己的狀況。</p>
+        </div>
+        <div class="doc-creds">
+          <div class="cred"><div class="cred-k">學歷</div><div class="cred-v">[醫學院名稱] 牙醫學系</div></div>
+          <div class="cred"><div class="cred-k">執照</div><div class="cred-v">牙醫師證書 醫字第 XXXXX 號</div></div>
+          <div class="cred"><div class="cred-k">專長</div><div class="cred-v">一般牙科、植牙、假牙贗復</div></div>
+          <div class="cred"><div class="cred-k">經歷</div><div class="cred-v">[醫院/診所] 主治醫師、執業 15 年以上</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="fade-in" style="max-width:32em;">
+      <div class="eyebrow">看診流程</div>
+      <h2 class="section-title">第一次來，會是這樣</h2>
+      <p class="section-sub">不用緊張，我們一步一步帶你，每個階段都會先說明再進行。</p>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-step fade-in"><div class="proc-n">01</div><div class="proc-name">預約登記</div><div class="proc-desc">電話或線上預約，初診填寫基本資料與健康狀況。</div></div>
+      <div class="proc-step fade-in"><div class="proc-n">02</div><div class="proc-name">檢查評估</div><div class="proc-desc">口腔檢查、必要時拍攝 X 光，了解整體狀況。</div></div>
+      <div class="proc-step fade-in"><div class="proc-n">03</div><div class="proc-name">說明與討論</div><div class="proc-desc">用影像跟你說明，一起討論治療方式與費用，你決定。</div></div>
+      <div class="proc-step fade-in"><div class="proc-n">04</div><div class="proc-name">開始治療</div><div class="proc-desc">依計畫進行，過程中隨時可舉手暫停，我們會留意你的感受。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="eyebrow fade-in">患者回饋</div>
+    <div class="rev-top fade-in">
+      <div class="score-box">
+        <div class="score-num">4.8</div>
+        <div class="score-stars">★★★★★</div>
+        <div class="score-count">Google 評論　260 則以上</div>
+      </div>
+      <div class="score-bars">
+        <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div><span>90%</span></div>
+        <div class="bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:7%"></div></div><span>7%</span></div>
+        <div class="bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span>2%</span></div>
+        <div class="bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span>1%</span></div>
+        <div class="bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+      </div>
+    </div>
+    <div class="review-grid">
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">本來很怕看牙，醫師很有耐心地解釋每個步驟，過程比想像中輕鬆。護理師也很親切，會注意你會不會不舒服。</p>
+        <div class="review-who">一般治療</div>
+        <div class="review-author"><span class="review-name">張 O 凱</span><span class="review-date">2025 年 3 月</span></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">帶小孩來看，醫師不會硬來，先讓他熟悉環境，第二次就敢自己躺上去了。費用也都說得很清楚，不會有隱藏收費。</p>
+        <div class="review-who">兒童牙科</div>
+        <div class="review-author"><span class="review-name">吳 O 婷</span><span class="review-date">2025 年 2 月</span></div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">植牙前評估很仔細，把各種選擇和費用都列清楚讓我自己決定，沒有推銷。診所很乾淨，動線也舒服。</p>
+        <div class="review-who">植牙諮詢</div>
+        <div class="review-author"><span class="review-name">劉 O 德</span><span class="review-date">2025 年 1 月</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO -->
+<section id="info">
+  <div class="container">
+    <div class="eyebrow fade-in">門診資訊</div>
+    <h2 class="section-title fade-in" style="margin-bottom:46px;">看診時間與位置</h2>
+    <div class="info-layout">
+      <div class="info-block fade-in">
+        <div class="info-h">看診時間</div>
+        <div class="hours-row" data-day="週一"><span class="hours-day">週一</span><span class="hours-time">09:30 – 21:00</span></div>
+        <div class="hours-row" data-day="週二"><span class="hours-day">週二</span><span class="hours-time">09:30 – 21:00</span></div>
+        <div class="hours-row" data-day="週三"><span class="hours-day">週三</span><span class="hours-time">09:30 – 21:00</span></div>
+        <div class="hours-row" data-day="週四"><span class="hours-day">週四</span><span class="hours-time">09:30 – 21:00</span></div>
+        <div class="hours-row" data-day="週五"><span class="hours-day">週五</span><span class="hours-time">09:30 – 21:00</span></div>
+        <div class="hours-row" data-day="週六"><span class="hours-day">週六</span><span class="hours-time">09:00 – 17:00</span></div>
+        <div class="hours-row" data-day="週日"><span class="hours-day">週日</span><span class="hours-closed">休診</span></div>
+        <p class="hours-foot">午休 12:30–14:30。國定假日門診請來電或看 LINE 公告。當日急診請先致電。</p>
+      </div>
+      <div class="info-block fade-in">
+        <div class="info-h">診所位置</div>
+        <div class="info-row"><div class="info-k">地址</div><div class="info-v">台中市西屯區西屯路二段XX號</div></div>
+        <div class="info-row"><div class="info-k">電話</div><div class="info-v"><a href="tel:04-2316-1000">04-2316-1000</a></div></div>
+        <div class="info-row"><div class="info-k">交通</div><div class="info-v">公車「西屯路口」站步行 2 分鐘；鄰近多線公車。</div></div>
+        <div class="info-row"><div class="info-k">停車</div><div class="info-v">診所配合鄰近停車場，看診可折抵，詳情請洽櫃檯。</div></div>
+        <div class="img-frame map-frame">
+          <svg class="cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="lbl">[此處嵌入 Google 地圖 iframe]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <div class="eyebrow cta-eyebrow">牙齒不舒服嗎</div>
+        <h2>早點檢查，問題小、花費少</h2>
+        <p>牙齒的問題拖久了通常只會更麻煩。先預約檢查，我們幫你看看狀況、說清楚再決定怎麼做。</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:04-2316-1000" class="btn cta-btn-paper">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          預約看診 04-2316-1000
+        </a>
+        <a href="https://lin.ee/[LINE官方帳號ID]" target="_blank" rel="noopener" class="btn cta-btn-line">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg>
+          LINE 線上預約
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-head fade-in">
+      <div class="eyebrow">就診前想問的</div>
+      <h2 class="section-title">常見問題</h2>
+    </div>
+    <div class="faq-grid fade-in">
+      <div class="faq-item">
+        <div class="faq-q">第一次看診要帶什麼？</div>
+        <div class="faq-a">帶健保卡即可。若有過去的 X 光、病歷或正在服用的藥物清單，也可一併帶來，幫助我們更了解你的狀況。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">費用怎麼算？有健保嗎？</div>
+        <div class="faq-a">我們是健保特約診所，一般檢查、洗牙、補牙多為健保給付。自費項目（如植牙、矯正、美白）會在治療前清楚說明費用，不會有隱藏收費。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">很怕痛怎麼辦？</div>
+        <div class="faq-a">請務必先告訴我們。我們會放慢步調、充分麻醉，過程中你隨時可以舉手暫停。我們的目標是讓你盡量舒適地完成治療。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">可以當天掛號嗎？</div>
+        <div class="faq-a">建議先預約以免久候。當日有空檔仍可看診，急症請先來電，我們會盡量為您安排。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">康德<em>牙醫</em></div>
+        <p class="footer-desc">台中西屯的牙醫診所。我們相信，看牙最重要的是「先聽你說、讓你聽懂」。</p>
+        <div class="footer-contacts">
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>台中市西屯區西屯路二段XX號</span></div>
+          <div class="footer-contact"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>04-2316-1000</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">診所</div>
+        <div class="footer-links">
+          <a href="#services">診療項目</a>
+          <a href="#doctor">醫師團隊</a>
+          <a href="#process">看診流程</a>
+          <a href="#info">門診時間</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">預約</div>
+        <div class="footer-links">
+          <a href="https://lin.ee/[LINE官方帳號ID]" target="_blank" rel="noopener">LINE 預約</a>
+          <a href="tel:04-2316-1000">電話預約</a>
+          <a href="https://maps.google.com/?q=台中市西屯區西屯路二段" target="_blank" rel="noopener">Google 地圖</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 康德牙醫診所．版權所有</span>
+      <span>網站設計　<a href="#">蕭丞叡 網頁設計</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY -->
+<div class="mobile-cta-bar">
+  <a href="https://lin.ee/[LINE官方帳號ID]" target="_blank" rel="noopener" class="mcta-line">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.5A8.5 8.5 0 1 1 21 11.5z"/></svg>LINE
+  </a>
+  <a href="tel:04-2316-1000" class="mcta-tel">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>電話
+  </a>
+  <a href="#services" class="mcta-appt">看診療項目</a>
+</div>
+
+<script>
+  function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+  });
+  const io = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => { if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 60); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+
+  const days = ['週日','週一','週二','週三','週四','週五','週六'];
+  const today = days[new Date().getDay()];
+  document.querySelectorAll('.hours-row').forEach(row => {
+    if (row.dataset.day === today) row.classList.add('hours-today');
+  });
+
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+  });
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+    el.addEventListener('click', () => { if (typeof gtag === 'function') gtag('event', 'phone_click', { event_category: 'contact' }); });
+  });
+  document.querySelectorAll('a[href*="lin.ee"], a[href*="line.me"]').forEach(el => {
+    el.addEventListener('click', () => { if (typeof gtag === 'function') gtag('event', 'line_click', { event_category: 'contact' }); });
+  });
+</script>
+</body>
+</html>

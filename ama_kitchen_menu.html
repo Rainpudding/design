@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="阿嬤ê灶跤完整菜單 — 招牌三杯雞、古早味爌肉飯、苦瓜排骨湯等台南永康家常台菜。當天現買現煮，不用味精。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="完整菜單 | 阿嬤ê灶跤">
+  <meta property="og:description" content="台南永康家常台菜，招牌三杯雞、古早味爌肉飯、苦瓜排骨湯。當天現買現煮。">
+  <meta property="og:image" content="https://ama-kitchen.tw/og-image.jpg">
+  <link rel="canonical" href="https://ama-kitchen.tw/menu">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>完整菜單 | 阿嬤ê灶跤</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "阿嬤ê灶跤 菜單",
+    "url": "https://ama-kitchen.tw/menu",
+    "inLanguage": "zh-TW"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 — 替換 G-XXXXXXXXXX 後啟用 -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <style>
+    :root {
+      --ink:      #211e1a;
+      --ink-soft: #3c372f;
+      --paper-0:  #faf7ef;
+      --paper:    #f4efe4;
+      --paper-2:  #ece4d4;
+      --green:    #33453a;
+      --green-2:  #2a3a30;
+      --green-deep:#1d2922;
+      --red:      #7c2f28;
+      --red-2:    #642019;
+      --sub:      #5c5447;
+      --muted:    #8c8475;
+      --brass:    #9b7c45;
+      --line:     rgba(33,30,26,.16);
+      --line-soft:rgba(33,30,26,.08);
+      --gold:     #b3873f;
+      --r:        5px;
+      --serif:  'Noto Serif TC', serif;
+      --sans:   'Noto Sans TC', system-ui, -apple-system, sans-serif;
+      --accent: 'Fraunces', 'Noto Serif TC', serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.75;
+      padding-top: 68px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 32px; }
+    .ic { width: 18px; height: 18px; flex-shrink: 0; }
+
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ══ NAV ══ */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(244,239,228,.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; color: var(--ink); letter-spacing: .04em; }
+    .nav-logo em { font-style: normal; color: var(--red); }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { font-size: .86rem; color: var(--sub); font-weight: 500; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--red); }
+    .nav-links a.active { font-weight: 700; }
+    .nav-right { display: flex; align-items: center; gap: 14px; }
+    .nav-cta { font-size: .82rem; padding: 9px 18px; border-radius: var(--r); background: var(--red); color: var(--paper-0); font-weight: 700; }
+    .nav-cta:hover { background: var(--red-2); }
+    .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px; }
+    .nav-burger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: .3s; }
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: absolute; top: 68px; left: 0; right: 0;
+      background: rgba(244,239,228,.98); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line); padding: 22px 32px; gap: 20px; z-index: 199;
+    }
+
+    /* ══ PAGE HERO ══ */
+    #page-hero { background: var(--green); padding: 56px 0 50px; }
+    .breadcrumb { display: flex; align-items: center; gap: 10px; font-size: .76rem; color: rgba(244,239,228,.5); margin-bottom: 22px; }
+    .breadcrumb a { color: rgba(244,239,228,.5); }
+    .breadcrumb a:hover { color: rgba(244,239,228,.85); }
+    .ph-eyebrow { font-family: var(--accent); font-style: italic; font-size: .9rem; color: #d8bd86; margin-bottom: 12px; }
+    .ph-title { font-family: var(--serif); font-size: clamp(1.9rem,4vw,2.7rem); font-weight: 700; color: var(--paper-0); margin-bottom: 12px; line-height: 1.3; }
+    .ph-sub { font-size: .95rem; color: rgba(244,239,228,.7); max-width: 32em; line-height: 1.85; }
+
+    /* ══ ANCHOR NAV ══ */
+    #menu-anchors { background: var(--paper-0); border-bottom: 1px solid var(--line); position: sticky; top: 68px; z-index: 100; }
+    .anchors-inner { display: flex; overflow-x: auto; scrollbar-width: none; }
+    .anchors-inner::-webkit-scrollbar { display: none; }
+    .anchor-link {
+      display: flex; align-items: center; padding: 15px 22px;
+      font-size: .85rem; font-weight: 500; color: var(--muted);
+      border-bottom: 2px solid transparent; white-space: nowrap; transition: color .2s, border-color .2s;
+    }
+    .anchor-link:hover { color: var(--ink); }
+    .anchor-link.active { color: var(--ink); border-color: var(--red); font-weight: 700; }
+
+    /* ══ SEASONAL NOTE ══ */
+    #seasonal { padding: 30px 0; background: var(--paper-2); border-bottom: 1px solid var(--line); }
+    .seasonal-inner { display: flex; align-items: flex-start; gap: 16px; }
+    .seasonal-inner .ic { width: 20px; height: 20px; color: var(--brass); margin-top: 3px; }
+    .seasonal-text { font-size: .9rem; color: var(--sub); line-height: 1.85; }
+    .seasonal-text strong { color: var(--green); font-weight: 700; }
+
+    /* ══ MENU SECTIONS ══ */
+    .menu-section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+    .menu-section:nth-child(even) { background: var(--paper-0); }
+    .ms-header { margin-bottom: 28px; }
+    .ms-eyebrow { font-family: var(--accent); font-style: italic; font-size: .85rem; color: var(--brass); margin-bottom: 8px; }
+    .ms-title { font-family: var(--serif); font-size: 1.55rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .ms-sub { font-size: .87rem; color: var(--muted); }
+
+    .dish-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px; }
+    .dish {
+      display: grid; grid-template-columns: 1fr auto; gap: 3px 16px;
+      padding: 16px 0; border-bottom: 1px solid var(--line-soft); align-items: baseline;
+    }
+    .dish-name { font-family: var(--serif); font-size: 1.06rem; font-weight: 600; color: var(--ink); }
+    .dish-tag { font-family: var(--sans); font-size: .62rem; font-weight: 700; letter-spacing: .05em; padding: 1px 7px; margin-left: 9px; border-radius: 2px; vertical-align: middle; }
+    .tag-house { color: var(--red); border: 1px solid var(--red); }
+    .tag-season { color: var(--green); border: 1px solid var(--green); }
+    .tag-veg { color: var(--brass); border: 1px solid var(--brass); }
+    .dish-price { font-family: var(--accent); font-size: 1.04rem; font-weight: 500; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+    .dish-desc { grid-column: 1 / 2; font-size: .82rem; color: var(--sub); line-height: 1.7; }
+
+    /* ══ SET MEALS ══ */
+    #sets { padding: 64px 0; background: var(--paper-2); }
+    .set-grid { display: grid; grid-template-columns: 1fr 1.15fr 1fr; gap: 22px; align-items: start; }
+    .set-card { background: var(--paper-0); border: 1px solid var(--line); border-radius: var(--r); padding: 30px 26px; }
+    .set-card.feature { background: var(--green); border-color: var(--green); }
+    .set-name { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; color: var(--ink); margin-bottom: 14px; }
+    .set-card.feature .set-name { color: var(--paper-0); }
+    .set-items { font-size: .88rem; color: var(--sub); line-height: 2; margin-bottom: 18px; }
+    .set-card.feature .set-items { color: rgba(244,239,228,.82); }
+    .set-price { font-family: var(--accent); font-size: 1.7rem; font-weight: 600; color: var(--red); }
+    .set-card.feature .set-price { color: #e9c98a; }
+    .set-note { font-size: .76rem; color: var(--muted); margin-top: 6px; }
+    .set-card.feature .set-note { color: rgba(244,239,228,.6); }
+
+    /* ══ NOTE ══ */
+    #note { padding: 44px 0; background: var(--paper-0); border-top: 1px solid var(--line); }
+    .note-title { font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--ink); margin-bottom: 14px; }
+    .note-text { font-size: .85rem; color: var(--sub); line-height: 1.9; max-width: 50em; }
+
+    /* ══ RESERVE CTA ══ */
+    #reserve { padding: 72px 0; background: var(--red); }
+    .reserve-inner { text-align: center; }
+    .reserve-eyebrow { font-family: var(--accent); font-style: italic; font-size: .9rem; color: #f0d3a0; margin-bottom: 14px; }
+    .reserve-title { font-family: var(--serif); font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; color: var(--paper-0); margin-bottom: 12px; }
+    .reserve-sub { font-size: .95rem; color: rgba(244,239,228,.78); margin-bottom: 30px; }
+    .reserve-btns { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn-reserve { display: inline-flex; align-items: center; gap: 9px; padding: 14px 30px; background: var(--paper-0); color: var(--red); font-size: .9rem; font-weight: 700; border-radius: var(--r); }
+    .btn-reserve:hover { background: #fff; }
+    .btn-back { display: inline-flex; align-items: center; gap: 8px; padding: 14px 26px; background: transparent; color: var(--paper-0); font-size: .9rem; font-weight: 700; border-radius: var(--r); border: 1px solid rgba(244,239,228,.45); }
+    .btn-back:hover { border-color: var(--paper-0); }
+
+    /* ══ FOOTER ══ */
+    footer { background: var(--green-deep); color: rgba(244,239,228,.45); padding: 30px 0; font-size: .8rem; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-inner .fl { font-family: var(--serif); color: var(--paper-0); font-weight: 600; }
+    .footer-links { display: flex; gap: 22px; }
+    .footer-links a { color: rgba(244,239,228,.45); transition: color .2s; }
+    .footer-links a:hover { color: var(--paper-0); }
+
+    /* ══ MOBILE STICKY BAR ══ */
+    .mobile-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 300; background: rgba(244,239,228,.96); backdrop-filter: blur(12px); border-top: 1px solid var(--line); padding: 11px 16px 15px; gap: 10px; }
+    .mobile-bar a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; font-size: .86rem; font-weight: 700; padding: 13px; border-radius: var(--r); }
+    .mbar-tel { background: var(--red); color: var(--paper-0); }
+    .mbar-back { background: transparent; color: var(--green); border: 1px solid var(--green); }
+
+    /* ══ RESPONSIVE ══ */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-burger { display: flex; }
+      .dish-list { grid-template-columns: 1fr; gap: 0; }
+      .set-grid { grid-template-columns: 1fr; gap: 16px; }
+      body { padding-bottom: 72px; }
+      .mobile-bar { display: flex; }
+    }
+    @media (max-width: 480px) { .container { padding: 0 22px; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; }
+      html { scroll-behavior: auto; }
+      .fade-in { opacity: 1; transform: none; }
+    }
+    @media print {
+      #nav, .mobile-bar, #reserve, #menu-anchors { display: none !important; }
+      body { padding-top: 0; }
+      .fade-in { opacity: 1; transform: none; }
+      .menu-section { padding: 24px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="ama_kitchen_v2.html" class="nav-logo">阿嬤<em>ê</em>灶跤</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="ama_kitchen_v2.html#signature">關於我們</a></li>
+      <li><a href="ama_kitchen_menu.html" class="active">完整菜單</a></li>
+      <li><a href="ama_kitchen_v2.html#highlights">招牌推薦</a></li>
+      <li><a href="ama_kitchen_v2.html#reviews">客人的話</a></li>
+      <li><a href="ama_kitchen_v2.html#info">來坐</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:06-2561388" class="nav-cta">電話訂位</a>
+      <button class="nav-burger" id="burger" onclick="toggleMenu()" aria-label="選單">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ══ -->
+<section id="page-hero">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="ama_kitchen_v2.html">首頁</a>
+      <span>/</span>
+      <span style="color:rgba(244,239,228,.8);">完整菜單</span>
+    </nav>
+    <div class="ph-eyebrow">the full menu</div>
+    <h1 class="ph-title">阿嬤的菜，全在這了</h1>
+    <p class="ph-sub">這份是常備菜色，價錢可能隨市場小調整，季節限定的賣完就沒。有什麼想吃的、或要忌口，點餐時跟我們講一聲。</p>
+  </div>
+</section>
+
+<!-- ══ ANCHOR NAV ══ -->
+<div id="menu-anchors">
+  <div class="container" style="padding:0;">
+    <div class="anchors-inner">
+      <a href="#house" class="anchor-link active">招牌菜</a>
+      <a href="#stirfry" class="anchor-link">熱炒</a>
+      <a href="#soup" class="anchor-link">湯品</a>
+      <a href="#rice" class="anchor-link">飯麵</a>
+      <a href="#sweet" class="anchor-link">甜點</a>
+      <a href="#sets" class="anchor-link">合菜套餐</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SEASONAL NOTE ══ -->
+<section id="seasonal">
+  <div class="container">
+    <div class="seasonal-inner">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 20A7 7 0 0 1 4 13c0-5 7-9 7-9s7 4 7 9a7 7 0 0 1-7 7z"/><path d="M11 20v-6"/></svg>
+      <p class="seasonal-text">
+        <strong>這陣子的好貨：苦瓜、絲瓜、竹筍</strong><br>
+        阿嬤每天看市場有什麼好的才進，所以菜單會跟著季節換。標「季節」的，是當令最值得點的；標「素」的，沒有蔥蒜葷食。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 招牌菜 ══ -->
+<section class="menu-section" id="house">
+  <div class="container">
+    <div class="ms-header fade-in">
+      <div class="ms-eyebrow">house favorites</div>
+      <h2 class="ms-title">招牌菜</h2>
+      <p class="ms-sub">第一次來，從這幾道開始準沒錯</p>
+    </div>
+    <div class="dish-list fade-in">
+      <div class="dish">
+        <div class="dish-name">招牌三杯雞<span class="dish-tag tag-house">招牌</span></div>
+        <div class="dish-price">$280</div>
+        <div class="dish-desc">九層塔現摘、溫體雞、自家釀醬油，起鍋前才下塔香，砂鍋上桌還在滾。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">古早味爌肉飯</div>
+        <div class="dish-price">$70</div>
+        <div class="dish-desc">五花滷六小時，肥而不膩，滷汁拌飯能扒兩碗。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">菜脯煎蛋</div>
+        <div class="dish-price">$110</div>
+        <div class="dish-desc">老菜脯切丁，蛋香帶點微焦邊，最家常也最耐吃。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">蒜泥白肉</div>
+        <div class="dish-price">$220</div>
+        <div class="dish-desc">三層肉燙得剛好，蒜泥醬油膏自己調，配薑絲解膩。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 熱炒 ══ -->
+<section class="menu-section" id="stirfry">
+  <div class="container">
+    <div class="ms-header fade-in">
+      <div class="ms-eyebrow">stir-fry</div>
+      <h2 class="ms-title">熱炒</h2>
+      <p class="ms-sub">大火快炒，現點現做，鑊氣足</p>
+    </div>
+    <div class="dish-list fade-in">
+      <div class="dish">
+        <div class="dish-name">蒜炒水蓮</div>
+        <div class="dish-price">$150</div>
+        <div class="dish-desc">大火快炒鎖水分，清脆爽口，桌上一定要有的青菜。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">沙茶炒牛肉</div>
+        <div class="dish-price">$220</div>
+        <div class="dish-desc">嫩肩里肌，沙茶夠味，是會讓人多添飯的那種。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">鹹蛋苦瓜<span class="dish-tag tag-season">季節</span></div>
+        <div class="dish-price">$160</div>
+        <div class="dish-desc">山苦瓜裹鹹蛋黃，微苦回甘，看當天有沒有好苦瓜。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">三杯杏鮑菇<span class="dish-tag tag-veg">素</span></div>
+        <div class="dish-price">$160</div>
+        <div class="dish-desc">杏鮑菇煸到外香內Q，三杯醬不輸三杯雞，吃素也能過癮。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">蔭豉蚵仔</div>
+        <div class="dish-price">$200</div>
+        <div class="dish-desc">東石鮮蚵配豆豉，鹹香下飯，蚵仔肥的時候最該點。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 湯品 ══ -->
+<section class="menu-section" id="soup">
+  <div class="container">
+    <div class="ms-header fade-in">
+      <div class="ms-eyebrow">soup</div>
+      <h2 class="ms-title">湯品</h2>
+      <p class="ms-sub">大骨熬足四小時，不加味精</p>
+    </div>
+    <div class="dish-list fade-in">
+      <div class="dish">
+        <div class="dish-name">苦瓜排骨湯</div>
+        <div class="dish-price">$180</div>
+        <div class="dish-desc">白玉苦瓜燉到透，湯清甜不油，喝一口整個人鬆下來。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">蛤蜊絲瓜</div>
+        <div class="dish-price">$160</div>
+        <div class="dish-desc">澎湖絲瓜配現吐沙的蛤蜊，鮮甜，不用多調味。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">竹筍排骨湯<span class="dish-tag tag-season">季節</span></div>
+        <div class="dish-price">$180</div>
+        <div class="dish-desc">綠竹筍當季才有，清甜帶筍香，夏天的限定。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">味噌豆腐湯</div>
+        <div class="dish-price">$60</div>
+        <div class="dish-desc">嫩豆腐、海帶芽，暖暖一碗，小朋友也愛。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 飯麵 ══ -->
+<section class="menu-section" id="rice">
+  <div class="container">
+    <div class="ms-header fade-in">
+      <div class="ms-eyebrow">rice &amp; noodles</div>
+      <h2 class="ms-title">飯麵</h2>
+      <p class="ms-sub">配菜的好朋友，也可以單點吃粗飽</p>
+    </div>
+    <div class="dish-list fade-in">
+      <div class="dish">
+        <div class="dish-name">滷肉飯</div>
+        <div class="dish-price">$40</div>
+        <div class="dish-desc">自家滷肉燥，肥瘦剛好，淋在熱飯上香氣全出來。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">油蔥雞絲飯</div>
+        <div class="dish-price">$60</div>
+        <div class="dish-desc">手撕雞絲鋪飯，淋雞油與油蔥酥，簡單但停不下來。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">古早味炒米粉</div>
+        <div class="dish-price">$80</div>
+        <div class="dish-desc">純米米粉，香菇肉絲爆香，是辦桌會出現的那個味。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">白飯</div>
+        <div class="dish-price">$10</div>
+        <div class="dish-desc">在地契作好米，現煮。配菜配湯就少不了它。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 甜點 ══ -->
+<section class="menu-section" id="sweet">
+  <div class="container">
+    <div class="ms-header fade-in">
+      <div class="ms-eyebrow">sweets</div>
+      <h2 class="ms-title">甜點</h2>
+      <p class="ms-sub">自己做的，限量，賣完就收</p>
+    </div>
+    <div class="dish-list fade-in">
+      <div class="dish">
+        <div class="dish-name">古早味豆花</div>
+        <div class="dish-price">$50</div>
+        <div class="dish-desc">純黃豆手工做，糖水自己熬，吃完飯來一碗剛剛好。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">紅豆湯圓</div>
+        <div class="dish-price">$60</div>
+        <div class="dish-desc">小湯圓Q彈，紅豆熬到綿，冬天特別多人點。</div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">花生湯</div>
+        <div class="dish-price">$50</div>
+        <div class="dish-desc">花生燉到一抿就化，甜而不膩，配油條更對味。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 合菜套餐 ══ -->
+<section id="sets">
+  <div class="container">
+    <div class="ms-header fade-in" style="margin-bottom:30px;">
+      <div class="ms-eyebrow">set meals</div>
+      <h2 class="ms-title">合菜套餐</h2>
+      <p class="ms-sub">人多不知道怎麼點？交給我們配就對了</p>
+    </div>
+    <div class="set-grid fade-in">
+      <div class="set-card">
+        <div class="set-name">阿嬤獨享餐</div>
+        <p class="set-items">滷肉飯<br>＋ 燙青菜<br>＋ 味噌豆腐湯</p>
+        <div class="set-price">$120</div>
+        <div class="set-note">一個人來也能吃得好</div>
+      </div>
+      <div class="set-card feature">
+        <div class="set-name">四人團圓桌</div>
+        <p class="set-items">招牌三杯雞　＋　古早味爌肉<br>＋ 兩道時蔬　＋　一鍋湯<br>＋ 白飯 ×4　＋　豆花 ×4</p>
+        <div class="set-price">$1,180</div>
+        <div class="set-note">最多人點，比單點省約 $260</div>
+      </div>
+      <div class="set-card">
+        <div class="set-name">雙人家常餐</div>
+        <p class="set-items">三杯雞 或 爌肉<br>＋ 一道青菜<br>＋ 一鍋湯　＋　白飯 ×2</p>
+        <div class="set-price">$580</div>
+        <div class="set-note">兩個人剛剛好的份量</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NOTE ══ -->
+<section id="note">
+  <div class="container">
+    <div class="note-title fade-in">點餐前想讓你知道</div>
+    <p class="note-text fade-in">菜色和價格會跟著季節、市場行情小幅調整，以店內當日為準。有食物過敏（像是海鮮、蛋、堅果）或忌口，點餐時跟我們說，能配的我們盡量配。合菜可以提前電話預訂，人多的話建議先講，我們好備料。</p>
+  </div>
+</section>
+
+<!-- ══ RESERVE CTA ══ -->
+<section id="reserve">
+  <div class="container reserve-inner">
+    <div class="reserve-eyebrow fade-in">看好想吃的了嗎</div>
+    <h2 class="reserve-title fade-in">打通電話，位子我們留</h2>
+    <p class="reserve-sub fade-in">週末人多，先訂位免得久等。合菜也歡迎先預約。</p>
+    <div class="reserve-btns fade-in">
+      <a href="tel:06-2561388" class="btn-reserve">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        電話訂位 06-2561388
+      </a>
+      <a href="ama_kitchen_v2.html" class="btn-back">← 回首頁</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <span class="fl">阿嬤ê灶跤</span>
+    <div class="footer-links">
+      <a href="ama_kitchen_v2.html">首頁</a>
+      <a href="ama_kitchen_v2.html#highlights">招牌推薦</a>
+      <a href="ama_kitchen_v2.html#info">位置 &amp; 時間</a>
+    </div>
+    <span>© 2026 阿嬤ê灶跤</span>
+  </div>
+</footer>
+
+<!-- ══ MOBILE STICKY BAR ══ -->
+<div class="mobile-bar">
+  <a href="tel:06-2561388" class="mbar-tel">
+    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    電話訂位
+  </a>
+  <a href="ama_kitchen_v2.html" class="mbar-back">← 回首頁</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 60);
+    });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+
+  // Anchor nav active state
+  const sectionIds = ['house', 'stirfry', 'soup', 'rice', 'sweet', 'sets'];
+  const anchorLinks = document.querySelectorAll('.anchor-link');
+  const anchorObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        anchorLinks.forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`.anchor-link[href="#${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sectionIds.forEach(id => { const el = document.getElementById(id); if (el) anchorObs.observe(el); });
+
+  // GA4
+  document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+    el.addEventListener('click', () => {
+      if (typeof gtag === 'function') gtag('event', 'phone_click', { event_category: 'contact' });
+    });
+  });
+  document.querySelectorAll('.btn-reserve, .mbar-tel').forEach(el => {
+    el.addEventListener('click', () => {
+      if (typeof gtag === 'function') gtag('event', 'reserve_click', { event_category: 'conversion' });
+    });
+  });
+</script>
+</body>
+</html>
